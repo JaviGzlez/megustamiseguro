@@ -71,6 +71,7 @@ function Blog() {
           <a href="/">Inicio</a>
           <a href="/#seguros">Seguros</a>
           <a href="/#contacto">Contacto</a>
+          <a href="/mi-cuenta">Mi cuenta</a>
         </nav>
 
         <a href="/#contacto" className="blogHeaderBtn">
