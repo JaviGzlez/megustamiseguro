@@ -27,6 +27,24 @@ const FORM_VACIO = {
   notas: "",
 };
 
+// A partir del email, sacamos un nombre corto para mostrar en la
+// tabla y una clase CSS para colorear según quién sea (Belén,
+// Carlos, admin, o cualquier otro perfil futuro).
+function nombreCortoCreador(email) {
+  if (!email) return "—";
+  const usuario = email.split("@")[0];
+  const primeraParte = usuario.split(/[._-]/)[0];
+  return primeraParte.charAt(0).toUpperCase() + primeraParte.slice(1);
+}
+
+function claseColorCreador(email) {
+  if (!email) return "adminCreadoPor-otro";
+  if (email.startsWith("belen@")) return "adminCreadoPor-belen";
+  if (email.startsWith("carlos@")) return "adminCreadoPor-carlos";
+  if (email.includes("javier")) return "adminCreadoPor-admin";
+  return "adminCreadoPor-otro";
+}
+
 function diasHastaVencimiento(fecha) {
   if (!fecha) return null;
   const hoy = new Date();
@@ -226,7 +244,7 @@ function PolizasTab() {
                     <td>{p.tipo_seguro}</td>
                     <td>{p.compania || "—"}</td>
                     <td>{p.numero_poliza || "—"}</td>
-                    <td>
+                    <td className="adminColCorta">
                       {p.fecha_vencimiento
                         ? new Date(p.fecha_vencimiento).toLocaleDateString(
                             "es-ES"
@@ -242,15 +260,19 @@ function PolizasTab() {
                         <span className="adminAvisoVencido"> (vencida)</span>
                       )}
                     </td>
-                    <td>
+                    <td className="adminColCorta">
                       <span className={`adminEstadoPoliza adminEstadoPoliza-${p.estado}`}>
                         {p.estado}
                       </span>
                     </td>
-                    <td className="adminCreadoPor">
-                      {p.creador?.email || "—"}
+                    <td
+                      className={`adminCreadoPor ${claseColorCreador(
+                        p.creador?.email
+                      )}`}
+                    >
+                      {nombreCortoCreador(p.creador?.email)}
                     </td>
-                    <td>
+                    <td className="adminColCorta">
                       <div className="adminAccionesFila">
                         <button
                           className="adminEditarBtn"

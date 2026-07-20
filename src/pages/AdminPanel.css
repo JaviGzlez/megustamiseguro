@@ -40,7 +40,7 @@
 }
 
 .adminPanelContent {
-  max-width: 1300px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 32px;
 }
@@ -116,24 +116,34 @@
 
 .adminTable {
   width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .adminTable th {
   text-align: left;
-  padding: 14px 16px;
+  padding: 10px 10px;
   background: #f4f6f8;
   color: #555;
-  font-size: 12px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   white-space: nowrap;
 }
 
 .adminTable td {
-  padding: 14px 16px;
+  padding: 10px 10px;
   border-top: 1px solid #f0f0f0;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  vertical-align: middle;
+}
+
+/* Estas sí conviene que no salten de línea, son cortas por naturaleza */
+.adminTable td.adminColCorta,
+.adminTable th.adminColCorta {
   white-space: nowrap;
 }
 
@@ -377,6 +387,23 @@
 
 .adminCreadoPor {
   font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.adminCreadoPor-belen {
+  color: #d6336c;
+}
+
+.adminCreadoPor-carlos {
+  color: #1971c2;
+}
+
+.adminCreadoPor-admin {
+  color: #073b78;
+}
+
+.adminCreadoPor-otro {
   color: #888;
 }
 
