@@ -1,0 +1,23 @@
+.socialLinks {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.socialLinkIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: inherit;
+  font-size: 22px;
+  text-decoration: none;
+  opacity: 0.85;
+
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.socialLinkIcon:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}

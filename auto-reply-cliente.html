@@ -1,0 +1,96 @@
+<!--
+  AUTO-REPLY — Email de confirmación para el CLIENTE
+  -----------------------------------------------------
+  Cómo usarlo:
+  1. Entra a dashboard.emailjs.com → Email Templates → template_p5pdbve
+  2. Ve a la pestaña "Auto-Reply" (al lado de "Content")
+  3. Actívalo (suele haber un interruptor "Enable Auto-Reply")
+  4. En "To Email" pon: {{email}}
+  5. En "Subject" pon algo como: Hemos recibido tu solicitud - Me Gusta Mi Seguro
+  6. En el contenido, cambia al modo código/HTML y pega este bloque.
+  7. Guarda.
+
+  Este email es DISTINTO al que recibes tú — es el que ve el cliente,
+  así que el tono es más cercano y no lleva los datos internos
+  (estado, página, origen), solo lo que le interesa a él.
+-->
+
+<table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, sans-serif; max-width: 500px;">
+  <tr>
+    <td style="padding-bottom: 16px;">
+      <h2 style="margin: 0; font-size: 20px; color: #073b78;">
+        ¡Hola {{nombre}}!
+      </h2>
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-bottom: 16px; font-size: 15px; color: #333; line-height: 1.6;">
+      Hemos recibido tu solicitud sobre <strong>{{seguro}}</strong> y nos pondremos
+      en contacto contigo lo antes posible para ayudarte a encontrar la mejor opción.
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding: 16px; background: #f4f6f8; border-radius: 8px; font-size: 14px; color: #333;">
+      Referencia de tu solicitud: <strong>{{lead_id}}</strong>
+      <br />
+      Puedes usar esta referencia si necesitas contactarnos sobre ella.
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-top: 16px; font-size: 14px; color: #555;">
+      Si tienes cualquier duda mientras tanto, puedes escribirnos a
+      <a href="mailto:info@megustamiseguro.es" style="color: #0b4ea2;">info@megustamiseguro.es</a>
+      o llamarnos al <a href="tel:+34643727346" style="color: #0b4ea2;">643 727 346</a>.
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-top: 24px; border-top: 1px solid #e8f0f8; padding-top: 20px; margin-top: 16px;">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td style="padding-right: 16px; vertical-align: middle;">
+            <a href="https://megustamiseguro.es" target="_blank">
+              <img
+                src="https://megustamiseguro.es/email-assets/logo-email.png"
+                alt="Me Gusta Mi Seguro"
+                width="60"
+                style="display: block;"
+              />
+            </a>
+          </td>
+          <td style="vertical-align: middle;">
+            <p style="margin: 0; font-size: 14px; font-weight: bold; color: #073b78;">
+              Me Gusta Mi Seguro
+            </p>
+            <p style="margin: 2px 0 8px; font-size: 12px; color: #888;">
+              Te ayudamos a elegir con tranquilidad 👍
+            </p>
+
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="padding-right: 8px;">
+                  <a href="https://www.instagram.com/megustamiseguro/" target="_blank">
+                    <img src="https://megustamiseguro.es/email-assets/instagram.png" width="22" height="22" alt="Instagram" style="display: block;" />
+                  </a>
+                </td>
+                <td style="padding-right: 8px;">
+                  <a href="https://www.facebook.com/profile.php?id=61587879299177" target="_blank">
+                    <img src="https://megustamiseguro.es/email-assets/facebook.png" width="22" height="22" alt="Facebook" style="display: block;" />
+                  </a>
+                </td>
+                <td>
+                  <a href="https://www.linkedin.com/company/me-gusta-mi-seguro/" target="_blank">
+                    <img src="https://megustamiseguro.es/email-assets/linkedin.png" width="22" height="22" alt="LinkedIn" style="display: block;" />
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

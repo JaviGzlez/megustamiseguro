@@ -1,0 +1,82 @@
+.successOverlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 10000;
+  padding: 20px;
+}
+
+.successModal {
+  position: relative;
+
+  background: white;
+  border-radius: 12px;
+  padding: 36px 32px;
+
+  max-width: 400px;
+  width: 100%;
+
+  text-align: center;
+}
+
+.successIcon {
+  font-size: 48px;
+  color: #25d366;
+  margin-bottom: 12px;
+}
+
+.successModal h3 {
+  margin: 0 0 8px;
+}
+
+.successModal > p {
+  margin: 0 0 16px;
+  color: #555;
+}
+
+.successReferencia {
+  background: #f4f6f8;
+  border-radius: 8px;
+  padding: 10px 14px;
+
+  font-size: 14px;
+  color: #333;
+
+  word-break: break-word;
+}
+
+.successClose {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  color: #888;
+}
+
+.successClose:hover {
+  color: #222;
+}
+
+.successCloseBtn {
+  margin-top: 20px;
+  padding: 12px 28px;
+
+  border: none;
+  border-radius: 8px;
+  background: var(--blue, #0b4ea2);
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}

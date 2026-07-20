@@ -1,0 +1,719 @@
+:root {
+  --car-blue: #0b4ea2;
+  --car-dark: #073b78;
+  --car-orange: #f28c28;
+  --car-green: #25d366;
+  --car-text: #526071;
+  --car-line: #e8f0f8;
+  --car-soft: #f8fbff;
+  --car-shadow: 0 24px 60px rgba(11, 78, 162, 0.12);
+}
+
+.lifePage {
+  width: 100%;
+  overflow-x: hidden;
+  background: #ffffff;
+  color: var(--car-dark);
+}
+
+/* HEADER */
+
+.lifeHeader {
+  height: 84px;
+  padding: 0 clamp(22px, 6vw, 90px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--car-line);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.lifeHeaderLogo {
+  height: 72px;
+  object-fit: contain;
+}
+
+.lifeNav {
+  display: flex;
+  align-items: center;
+  gap: clamp(18px, 3vw, 34px);
+}
+
+.lifeNav a {
+  text-decoration: none;
+  color: var(--car-dark);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.lifeNav a:hover {
+  color: var(--car-orange);
+}
+
+.lifeHeaderBtn,
+.lifePrimaryBtn {
+  background: var(--car-orange);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 900;
+  box-shadow: 0 14px 30px rgba(242, 140, 40, 0.26);
+}
+
+.lifeHeaderBtn {
+  padding: 13px 22px;
+  white-space: nowrap;
+}
+
+/* HERO */
+
+.lifeHero {
+  padding: clamp(70px, 8vw, 110px) clamp(22px, 7vw, 110px);
+  background:
+    radial-gradient(circle at 92% 12%, rgba(242, 140, 40, 0.16), transparent 30%),
+    radial-gradient(circle at 8% 14%, rgba(11, 78, 162, 0.1), transparent 28%),
+    linear-gradient(135deg, #ffffff 0%, #eef6ff 100%);
+}
+
+.lifeHeroInner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.95fr);
+  gap: clamp(38px, 6vw, 80px);
+  align-items: center;
+}
+
+.lifeBreadcrumb {
+  color: var(--car-orange);
+  font-size: 14px;
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+
+.lifeHero h1 {
+  color: var(--car-blue);
+  font-size: clamp(46px, 5.4vw, 82px);
+  line-height: 1.02;
+  letter-spacing: clamp(-3.6px, -0.3vw, -1.6px);
+  font-weight: 900;
+  max-width: 780px;
+  margin-bottom: 24px;
+}
+
+.lifeHeroText {
+  color: var(--car-text);
+  font-size: clamp(17px, 1.4vw, 20px);
+  line-height: 1.75;
+  max-width: 670px;
+  margin-bottom: 34px;
+}
+
+.lifeButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.lifePrimaryBtn,
+.lifeSecondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 15px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 900;
+  transition: 0.25s ease;
+}
+
+.lifeSecondaryBtn {
+  background: #ffffff;
+  color: var(--car-dark);
+  border: 1px solid var(--car-line);
+  box-shadow: 0 14px 28px rgba(11, 78, 162, 0.06);
+}
+
+.lifePrimaryBtn:hover,
+.lifeSecondaryBtn:hover,
+.lifeHeaderBtn:hover {
+  transform: translateY(-2px);
+}
+
+.lifeHeroBadges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.lifeHeroBadges span {
+  color: var(--car-text);
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--car-line);
+  padding: 10px 13px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.lifeHeroVisual {
+  position: relative;
+  min-height: 520px;
+  border-radius: 34px;
+  overflow: hidden;
+  box-shadow: var(--car-shadow);
+  background: #ffffff;
+}
+
+.lifeHeroVisual img {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  object-fit: cover;
+  display: block;
+  filter: saturate(1.03) contrast(1.02);
+}
+
+.lifeHeroVisual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 46%, rgba(7, 59, 120, 0.38));
+}
+
+.lifeHeroNote {
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  bottom: 22px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 22px;
+  padding: 18px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.12);
+}
+
+.lifeHeroNote strong {
+  display: block;
+  color: var(--car-dark);
+  margin-bottom: 6px;
+}
+
+.lifeHeroNote span {
+  display: block;
+  color: var(--car-text);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+/* GENERAL */
+
+.lifeSection {
+  padding: clamp(70px, 8vw, 110px) clamp(22px, 7vw, 110px);
+}
+
+.lifeSectionInner {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+.lifeSectionTitle {
+  color: var(--car-dark);
+  font-size: clamp(34px, 4vw, 56px);
+  line-height: 1.06;
+  letter-spacing: -2.2px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.lifeSectionSubtitle {
+  color: var(--car-text);
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+/* TRUST BAR */
+
+.lifeTrustBar {
+  background: #ffffff;
+  padding: 34px clamp(22px, 7vw, 110px);
+  border-bottom: 1px solid var(--car-line);
+}
+
+.lifeTrustBarGrid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.lifeTrustBarItem {
+  background: #fbfdff;
+  border: 1px solid var(--car-line);
+  border-radius: 18px;
+  padding: 18px;
+  font-weight: 900;
+  color: var(--car-dark);
+  text-align: center;
+}
+
+.lifeTrustBarItem span {
+  color: var(--car-orange);
+  margin-right: 6px;
+}
+
+/* COVERAGE */
+
+.lifeCoverageGrid {
+  margin-top: 58px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.lifeCoverageCard,
+.lifeTypeCard,
+.lifeWhyCard,
+.lifeFaqItem {
+  background: #ffffff;
+  border: 1px solid var(--car-line);
+  box-shadow: 0 14px 34px rgba(11, 78, 162, 0.055);
+}
+
+.lifeCoverageCard {
+  border-radius: 24px;
+  padding: 30px 24px;
+}
+
+.lifeCoverageCard span,
+.lifeWhyCard span {
+  color: var(--car-orange);
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.lifeCoverageCard h3 {
+  color: var(--car-dark);
+  font-size: 20px;
+  margin: 14px 0 10px;
+  letter-spacing: -0.5px;
+}
+
+.lifeCoverageCard p {
+  color: var(--car-text);
+  line-height: 1.65;
+  font-size: 15px;
+}
+
+/* TYPES */
+
+.lifeTypesSection,
+.lifeFaqSection {
+  background: var(--car-soft);
+  padding: clamp(70px, 8vw, 110px) clamp(22px, 7vw, 110px);
+}
+
+.lifeTypesGrid {
+  margin-top: 58px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.lifeTypeCard {
+  border-radius: 28px;
+  padding: 34px 28px;
+}
+
+.lifeTypeCard small {
+  display: inline-block;
+  background: rgba(242, 140, 40, 0.12);
+  color: var(--car-orange);
+  font-weight: 900;
+  padding: 8px 12px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.lifeTypeCard h3 {
+  color: var(--car-dark);
+  font-size: 26px;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+}
+
+.lifeTypeCard p {
+  color: var(--car-text);
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.lifeTypeCard ul {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  color: var(--car-text);
+  line-height: 1.5;
+}
+
+.lifeTypeCard li::before {
+  content: "✓";
+  color: var(--car-orange);
+  font-weight: 900;
+  margin-right: 8px;
+}
+
+/* CTA */
+
+.lifeMidCta {
+  background: var(--car-dark);
+  color: #ffffff;
+  padding: 0 clamp(22px, 7vw, 110px);
+}
+
+.lifeMidCtaBox {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 52px 0;
+}
+
+.lifeMidCta h2 {
+  font-size: clamp(30px, 3vw, 44px);
+  letter-spacing: -1.8px;
+  margin-bottom: 10px;
+}
+
+.lifeMidCta p {
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.7;
+  max-width: 620px;
+}
+
+/* WHY */
+
+.lifeWhyGrid {
+  margin-top: 58px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.lifeWhyCard {
+  border-radius: 24px;
+  padding: 30px 24px;
+  text-align: center;
+}
+
+.lifeWhyCard span {
+  font-size: 30px;
+}
+
+.lifeWhyCard h3 {
+  color: var(--car-dark);
+  font-size: 18px;
+  line-height: 1.35;
+  margin-top: 14px;
+}
+
+/* DIFFERENCE */
+
+.lifeDifferenceBox {
+  width: min(980px, 100%);
+  margin: 0 auto;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(242, 140, 40, 0.14), transparent 30%),
+    linear-gradient(135deg, #ffffff 0%, #eef6ff 100%);
+  border: 1px solid var(--car-line);
+  border-radius: 34px;
+  padding: clamp(34px, 5vw, 58px);
+  text-align: center;
+  box-shadow: var(--car-shadow);
+}
+
+.lifeDifferenceBox h2 {
+  color: var(--car-dark);
+  font-size: clamp(34px, 4vw, 56px);
+  letter-spacing: -2.2px;
+  margin-bottom: 18px;
+}
+
+.lifeDifferenceBox p {
+  color: var(--car-text);
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 760px;
+  margin: 0 auto 28px;
+}
+
+/* FAQ */
+
+.lifeFaqList {
+  margin: 58px auto 0;
+  max-width: 900px;
+  display: grid;
+  gap: 16px;
+}
+
+.lifeFaqItem {
+  border-radius: 22px;
+  padding: 24px;
+}
+
+.lifeFaqItem h3 {
+  color: var(--car-dark);
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.lifeFaqItem p {
+  color: var(--car-text);
+  line-height: 1.7;
+}
+
+/* CONTACT */
+
+.lifeContactSection {
+  padding: clamp(70px, 8vw, 110px) clamp(22px, 7vw, 110px);
+  background:
+    radial-gradient(circle at 15% 10%, rgba(242, 140, 40, 0.12), transparent 28%),
+    linear-gradient(135deg, #ffffff 0%, #eef6ff 100%);
+}
+
+.lifeContactContainer {
+  width: min(860px, 100%);
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid var(--car-line);
+  border-radius: 34px;
+  padding: clamp(30px, 5vw, 56px);
+  box-shadow: var(--car-shadow);
+}
+
+.lifeContactContainer h2 {
+  color: var(--car-dark);
+  font-size: clamp(34px, 4vw, 54px);
+  text-align: center;
+  letter-spacing: -2px;
+  margin-bottom: 14px;
+}
+
+.lifeContactContainer > p {
+  color: var(--car-text);
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 34px;
+}
+
+.lifeContactForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.lifeContactForm input,
+.lifeContactForm select,
+.lifeContactForm textarea {
+  width: 100%;
+  border: 1px solid var(--car-line);
+  border-radius: 16px;
+  padding: 16px 18px;
+  font: inherit;
+  color: var(--car-dark);
+  background: #fbfdff;
+  outline: none;
+}
+
+.lifeContactForm textarea,
+.lifeContactForm button {
+  grid-column: 1 / -1;
+}
+
+.lifeContactForm button {
+  border: 0;
+  background: var(--car-orange);
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 17px 24px;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 16px 34px rgba(242, 140, 40, 0.25);
+}
+
+/* FOOTER */
+
+.lifeFooter {
+  background: var(--car-dark);
+  color: #ffffff;
+  padding: 60px 40px 20px;
+}
+
+.lifeFooterContainer {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.lifeFooterColumn h3,
+.lifeFooterColumn h4 {
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.lifeFooterColumn p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.lifeFooterColumn a {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.lifeFooterColumn a:hover {
+  color: var(--car-orange);
+}
+
+.lifeFooterBottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+/* WHATSAPP */
+
+.lifeWhatsappFloat {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: var(--car-green);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 18px 38px rgba(37, 211, 102, 0.32);
+  z-index: 1001;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+  .lifeNav {
+    display: none;
+  }
+
+  .lifeHeroInner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .lifeHeroText,
+  .lifeHeroVisual {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lifeButtons,
+  .lifeHeroBadges {
+    justify-content: center;
+  }
+
+  .lifeTrustBarGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lifeCoverageGrid,
+  .lifeTypesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .lifeMidCtaBox {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .lifeWhyGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lifeFooterContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .lifeHeader {
+    height: 76px;
+  }
+
+  .lifeHeaderLogo {
+    height: 62px;
+  }
+
+  .lifeHeaderBtn {
+    display: none;
+  }
+
+  .lifeHero h1 {
+    font-size: clamp(40px, 12vw, 54px);
+    letter-spacing: -2px;
+  }
+
+  .lifeHeroVisual,
+  .lifeHeroVisual img {
+    min-height: 360px;
+  }
+
+  .lifeHeroNote {
+    position: static;
+    border-radius: 0 0 24px 24px;
+  }
+
+  .lifeTrustBarGrid,
+  .lifeWhyGrid,
+  .lifeContactForm,
+  .lifeFooterContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .lifeContactForm textarea,
+  .lifeContactForm button {
+    grid-column: auto;
+  }
+
+  .lifeFooterContainer {
+    text-align: center;
+  }
+}

@@ -1,0 +1,132 @@
+<!--
+  BLOQUE DE DATOS DEL LEAD — Me Gusta Mi Seguro
+  ------------------------------------------------
+  Cómo usarlo:
+  1. Entra a dashboard.emailjs.com → Email Templates → template_p5pdbve
+  2. Cambia el editor al modo código/HTML (icono </> o "Edit Content")
+  3. Pega este bloque JUSTO ENCIMA de la firma que ya tienes (la del logo,
+     redes sociales, etc.) — no la borres, esta va ANTES.
+  4. Guarda y manda un envío de prueba.
+-->
+
+<table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, sans-serif; max-width: 500px;">
+  <tr>
+    <td style="padding-bottom: 16px;">
+      <h2 style="margin: 0; font-size: 20px; color: #073b78;">
+        Nueva solicitud recibida
+      </h2>
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding: 16px; background: #f4f6f8; border-radius: 8px;">
+      <table cellpadding="0" cellspacing="0" border="0" style="width: 100%; font-size: 14px; color: #333;">
+        <tr>
+          <td style="padding: 4px 0; width: 120px;"><strong>Nombre:</strong></td>
+          <td style="padding: 4px 0;">{{nombre}}</td>
+        </tr>
+        <tr>
+          <td style="padding: 4px 0;"><strong>Teléfono:</strong></td>
+          <td style="padding: 4px 0;">{{telefono}}</td>
+        </tr>
+        <tr>
+          <td style="padding: 4px 0;"><strong>Email:</strong></td>
+          <td style="padding: 4px 0;">{{email}}</td>
+        </tr>
+        {{#empresa}}
+        <tr>
+          <td style="padding: 4px 0;"><strong>Empresa:</strong></td>
+          <td style="padding: 4px 0;">{{empresa}}</td>
+        </tr>
+        {{/empresa}}
+        <tr>
+          <td style="padding: 4px 0;"><strong>Seguro:</strong></td>
+          <td style="padding: 4px 0;">{{seguro}}</td>
+        </tr>
+        <tr>
+          <td style="padding: 4px 0; vertical-align: top;"><strong>Mensaje:</strong></td>
+          <td style="padding: 4px 0;">{{mensaje}}</td>
+        </tr>
+        <tr>
+          <td style="padding: 4px 0;"><strong>Página:</strong></td>
+          <td style="padding: 4px 0;">{{pagina}}</td>
+        </tr>
+        <tr>
+          <td style="padding: 4px 0;"><strong>Fecha:</strong></td>
+          <td style="padding: 4px 0;">{{fecha}}</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding-top: 12px; font-size: 13px; color: #888;">
+      Referencia: <strong>{{lead_id}}</strong>
+    </td>
+  </tr>
+</table>
+
+<!--
+  FIRMA DE EMAIL — Me Gusta Mi Seguro
+  ------------------------------------
+  Cómo usarla:
+  1. Entra a dashboard.emailjs.com → Email Templates → template_p5pdbve
+  2. Cambia el editor a modo "Code" / vista HTML (icono </> normalmente)
+  3. Pega este bloque al final del cuerpo del email, después del mensaje
+     y los datos del cliente.
+  4. Guarda y manda un envío de prueba para ver cómo se ve.
+
+  IMPORTANTE: las imágenes (logo e iconos) usan la URL de tu dominio real
+  (megustamiseguro.es). Hasta que la web esté publicada ahí, las imágenes
+  no se verán en los emails recibidos — es normal, se arregla solo en
+  cuanto el sitio esté online en ese dominio.
+-->
+
+<table cellpadding="0" cellspacing="0" border="0" style="margin-top: 24px; border-top: 1px solid #e8f0f8; padding-top: 20px; font-family: Arial, sans-serif;">
+  <tr>
+    <td style="padding-right: 16px; vertical-align: middle;">
+      <a href="https://megustamiseguro.es" target="_blank">
+        <img
+          src="https://megustamiseguro.es/email-assets/logo-email.png"
+          alt="Me Gusta Mi Seguro"
+          width="70"
+          style="display: block; border-radius: 50%;"
+        />
+      </a>
+    </td>
+    <td style="vertical-align: middle;">
+      <p style="margin: 0; font-size: 15px; font-weight: bold; color: #073b78;">
+        Me Gusta Mi Seguro
+      </p>
+      <p style="margin: 4px 0 8px; font-size: 13px; color: #526071;">
+        Te ayudamos a elegir con tranquilidad 👍
+      </p>
+
+      <p style="margin: 0 0 4px; font-size: 13px; color: #526071;">
+        📞 <a href="tel:+34643727346" style="color: #526071; text-decoration: none;">643 727 346</a>
+        &nbsp;·&nbsp;
+        ✉️ <a href="mailto:info@megustamiseguro.es" style="color: #526071; text-decoration: none;">info@megustamiseguro.es</a>
+      </p>
+
+      <table cellpadding="0" cellspacing="0" border="0" style="margin-top: 8px;">
+        <tr>
+          <td style="padding-right: 8px;">
+            <a href="https://www.instagram.com/megustamiseguro/" target="_blank">
+              <img src="https://megustamiseguro.es/email-assets/instagram.png" width="24" height="24" alt="Instagram" style="display: block;" />
+            </a>
+          </td>
+          <td style="padding-right: 8px;">
+            <a href="https://www.facebook.com/profile.php?id=61587879299177" target="_blank">
+              <img src="https://megustamiseguro.es/email-assets/facebook.png" width="24" height="24" alt="Facebook" style="display: block;" />
+            </a>
+          </td>
+          <td>
+            <a href="https://www.linkedin.com/company/me-gusta-mi-seguro/" target="_blank">
+              <img src="https://megustamiseguro.es/email-assets/linkedin.png" width="24" height="24" alt="LinkedIn" style="display: block;" />
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
