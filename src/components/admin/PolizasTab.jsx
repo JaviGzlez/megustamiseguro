@@ -101,19 +101,37 @@ function PolizasTab() {
       fecha_vencimiento: form.fecha_vencimiento || null,
     };
 
+    const esNueva = !editandoId;
+
     const { error } = editandoId
       ? await supabase.from("polizas").update(datos).eq("id", editandoId)
       : await supabase
           .from("polizas")
           .insert({ ...datos, creado_por: session?.user?.id });
 
-    setGuardando(false);
-
     if (error) {
+      setGuardando(false);
       alert("No se pudo guardar la póliza. Revisa los datos e inténtalo de nuevo.");
       return;
     }
 
+    // Si es una póliza nueva y tiene email, invitamos al cliente a
+    // crear su cuenta para que pueda consultarla. Si ya tenía cuenta,
+    // la función simplemente no hace nada (no se reenvía el correo).
+    if (esNueva && datos.cliente_email) {
+      const { error: errorInvite } = await supabase.functions.invoke(
+        "invitar-cliente",
+        { body: { email: datos.cliente_email, nombre: datos.cliente_nombre } }
+      );
+      if (errorInvite) {
+        console.error("No se pudo invitar al cliente:", errorInvite);
+        alert(
+          "La póliza se guardó, pero no se pudo enviar el email de acceso al cliente. Puedes reintentarlo editando la póliza."
+        );
+      }
+    }
+
+    setGuardando(false);
     setForm(FORM_VACIO);
     setEditandoId(null);
     setMostrarForm(false);

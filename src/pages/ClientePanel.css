@@ -1,0 +1,109 @@
+.clientePanel {
+  min-height: 100vh;
+  background: #f4f6f8;
+}
+
+.clientePanelHeader {
+  background: white;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.clientePanelHeader img {
+  width: 44px;
+}
+
+.clientePanelHeaderRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+  color: #444;
+}
+
+.clienteLogoutBtn {
+  border: 1px solid #e0e0e0;
+  background: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.clientePanelContent {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.clientePanelContent h1 {
+  color: #073b78;
+  margin: 0 0 24px;
+}
+
+.clientePanelVacio {
+  color: #888;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.clientePolizasGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.clientePolizaCard {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(11, 78, 162, 0.08);
+  position: relative;
+}
+
+.clientePolizaTipo {
+  font-weight: 700;
+  color: #0b4ea2;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.clientePolizaFila {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.clientePolizaFila strong {
+  color: #222;
+  font-weight: 600;
+}
+
+.clienteEstadoPoliza {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.clienteEstadoPoliza-ACTIVA {
+  background: #e3f7e8;
+  color: #1c8a3e;
+}
+
+.clienteEstadoPoliza-VENCIDA {
+  background: #fdece9;
+  color: #c62828;
+}
+
+.clienteEstadoPoliza-CANCELADA {
+  background: #eee;
+  color: #777;
+}

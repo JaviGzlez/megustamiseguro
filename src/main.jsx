@@ -28,6 +28,9 @@ import { AuthProvider } from "./context/AuthContext";
 import RutaProtegida from "./components/RutaProtegida";
 import AdminLogin from "./pages/AdminLogin";
 import AdminPanel from "./pages/AdminPanel";
+import ClienteLogin from "./pages/ClienteLogin";
+import ClientePanel from "./pages/ClientePanel";
+import RutaProtegidaCliente from "./components/RutaProtegidaCliente";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -85,6 +88,16 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <RutaProtegida>
               <AdminPanel />
             </RutaProtegida>
+          }
+        />
+
+        <Route path="/mi-cuenta" element={<ClienteLogin />} />
+        <Route
+          path="/mi-cuenta/polizas"
+          element={
+            <RutaProtegidaCliente>
+              <ClientePanel />
+            </RutaProtegidaCliente>
           }
         />
       </Routes>
