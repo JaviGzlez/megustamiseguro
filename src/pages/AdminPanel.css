@@ -172,6 +172,178 @@
   color: #2e7d32;
 }
 
+/* PESTAÑAS */
+
+.adminTabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.adminTabs button {
+  border: none;
+  background: none;
+  padding: 10px 18px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #888;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px;
+}
+
+.adminTabs button.activo {
+  color: #0b4ea2;
+  border-bottom-color: #f28c28;
+}
+
+/* BADGE DE ROL */
+
+.adminRolBadge {
+  margin-left: 8px;
+  padding: 3px 10px;
+  background: #073b78;
+  color: white;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* BOTÓN NUEVA PÓLIZA */
+
+.adminNuevaPolizaBtn {
+  border: none;
+  background: #0b4ea2;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* AVISOS DE VENCIMIENTO */
+
+.adminAvisoVencimiento {
+  color: #b46b00;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.adminAvisoVencido {
+  color: #d32f2f;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.adminEstadoPoliza {
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.adminEstadoPoliza-ACTIVA {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.adminEstadoPoliza-VENCIDA {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.adminEstadoPoliza-CANCELADA {
+  background: #f0f0f0;
+  color: #777;
+}
+
+/* MODAL NUEVA PÓLIZA */
+
+.adminModalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 20px;
+}
+
+.adminModal {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 520px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.adminModal h2 {
+  margin: 0 0 20px;
+  color: #073b78;
+}
+
+.adminModal label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #555;
+  margin: 14px 0 6px;
+}
+
+.adminModal input,
+.adminModal select,
+.adminModal textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.adminModalRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.adminModalBotones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.adminModalBotones button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.adminModalBotones button[type="submit"] {
+  border: none;
+  background: #0b4ea2;
+  color: white;
+}
+
+.adminModalBotones button[type="submit"]:disabled {
+  opacity: 0.6;
+}
+
+.adminModalCancelar {
+  border: 1px solid #e0e0e0;
+  background: white;
+  color: #555;
+}
+
 @media (max-width: 700px) {
   .adminPanelContent {
     padding: 20px;
@@ -180,5 +352,9 @@
   .adminPanelToolbar {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .adminModalRow {
+    grid-template-columns: 1fr;
   }
 }

@@ -6,17 +6,33 @@ const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {
   const [session, setSession] = useState(null);
+  const [perfil, setPerfil] = useState(null);
   const [cargando, setCargando] = useState(true);
 
+  const cargarPerfil = async (userId) => {
+    if (!userId) {
+      setPerfil(null);
+      return;
+    }
+    const { data } = await supabase
+      .from("perfiles")
+      .select("*")
+      .eq("id", userId)
+      .single();
+    setPerfil(data || null);
+  };
+
   useEffect(() => {
-    supabase.auth.getSession().then(({ data }) => {
+    supabase.auth.getSession().then(async ({ data }) => {
       setSession(data.session);
+      await cargarPerfil(data.session?.user?.id);
       setCargando(false);
     });
 
     const { data: listener } = supabase.auth.onAuthStateChange(
-      (_event, nuevaSesion) => {
+      async (_event, nuevaSesion) => {
         setSession(nuevaSesion);
+        await cargarPerfil(nuevaSesion?.user?.id);
       }
     );
 
@@ -30,7 +46,7 @@ export function AuthProvider({ children }) {
 
   return (
     <AuthContext.Provider
-      value={{ session, cargando, iniciarSesion, cerrarSesion }}
+      value={{ session, perfil, cargando, iniciarSesion, cerrarSesion }}
     >
       {children}
     </AuthContext.Provider>
