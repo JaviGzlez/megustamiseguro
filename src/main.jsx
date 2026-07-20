@@ -29,6 +29,7 @@ import RutaProtegida from "./components/RutaProtegida";
 import AdminLogin from "./pages/AdminLogin";
 import AdminPanel from "./pages/AdminPanel";
 import ClienteLogin from "./pages/ClienteLogin";
+import CrearContrasena from "./pages/CrearContrasena";
 import ClientePanel from "./pages/ClientePanel";
 import RutaProtegidaCliente from "./components/RutaProtegidaCliente";
 
@@ -92,6 +93,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         />
 
         <Route path="/mi-cuenta" element={<ClienteLogin />} />
+        <Route path="/crear-contrasena" element={<CrearContrasena />} />
         <Route
           path="/mi-cuenta/polizas"
           element={

@@ -1,0 +1,76 @@
+.crearContrasenaPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f6f8;
+  padding: 20px;
+}
+
+.crearContrasenaCard {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 36px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 24px 60px rgba(11, 78, 162, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.crearContrasenaCard img {
+  width: 80px;
+  margin-bottom: 16px;
+}
+
+.crearContrasenaCard h1 {
+  font-size: 22px;
+  color: #073b78;
+  margin: 0 0 6px;
+}
+
+.crearContrasenaCard > p {
+  font-size: 14px;
+  color: #888;
+  margin: 0 0 24px;
+  line-height: 1.5;
+}
+
+.crearContrasenaCard input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.crearContrasenaCard button,
+.crearContrasenaBtn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 8px;
+  background: #f28c28;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.crearContrasenaCard button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.crearContrasenaError {
+  color: #d32f2f;
+  font-size: 14px;
+  margin: 0 0 12px;
+}

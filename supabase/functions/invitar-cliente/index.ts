@@ -83,7 +83,10 @@ Deno.serve(async (req) => {
 
     const { data, error } = await supabaseAdmin.auth.admin.inviteUserByEmail(
       email,
-      { data: { rol: "cliente", nombre: nombre || "" } }
+      {
+        data: { rol: "cliente", nombre: nombre || "" },
+        redirectTo: "https://megustamiseguro.es/crear-contrasena",
+      }
     );
 
     if (error) {
