@@ -12,6 +12,8 @@ const TIPOS_SEGURO = [
   "Transporte y Mercancía",
 ];
 
+const ESTADOS_POLIZA = ["ACTIVA", "VENCIDA", "CANCELADA"];
+
 const FORM_VACIO = {
   cliente_nombre: "",
   cliente_email: "",
@@ -21,6 +23,7 @@ const FORM_VACIO = {
   numero_poliza: "",
   fecha_inicio: "",
   fecha_vencimiento: "",
+  estado: "ACTIVA",
   notas: "",
 };
 
@@ -33,20 +36,25 @@ function diasHastaVencimiento(fecha) {
 }
 
 function PolizasTab() {
-  const { session } = useAuth();
+  const { session, perfil } = useAuth();
+  const esAdmin = perfil?.rol === "admin";
 
   const [polizas, setPolizas] = useState([]);
   const [cargando, setCargando] = useState(true);
   const [busqueda, setBusqueda] = useState("");
   const [mostrarForm, setMostrarForm] = useState(false);
+  const [editandoId, setEditandoId] = useState(null);
   const [form, setForm] = useState(FORM_VACIO);
   const [guardando, setGuardando] = useState(false);
 
   const cargarPolizas = async () => {
     setCargando(true);
+    // El "creador:perfiles(email)" pide a Supabase que, además de la
+    // póliza, traiga el email de quien la creó (usando la relación que
+    // definimos con creado_por).
     const { data, error } = await supabase
       .from("polizas")
-      .select("*")
+      .select("*, creador:perfiles(email)")
       .order("fecha_vencimiento", { ascending: true, nullsFirst: false });
 
     if (!error) setPolizas(data);
@@ -60,16 +68,44 @@ function PolizasTab() {
   const handleChange = (campo) => (e) =>
     setForm((prev) => ({ ...prev, [campo]: e.target.value }));
 
+  const abrirNueva = () => {
+    setEditandoId(null);
+    setForm(FORM_VACIO);
+    setMostrarForm(true);
+  };
+
+  const abrirEdicion = (p) => {
+    setEditandoId(p.id);
+    setForm({
+      cliente_nombre: p.cliente_nombre || "",
+      cliente_email: p.cliente_email || "",
+      cliente_telefono: p.cliente_telefono || "",
+      tipo_seguro: p.tipo_seguro || TIPOS_SEGURO[0],
+      compania: p.compania || "",
+      numero_poliza: p.numero_poliza || "",
+      fecha_inicio: p.fecha_inicio || "",
+      fecha_vencimiento: p.fecha_vencimiento || "",
+      estado: p.estado || "ACTIVA",
+      notas: p.notas || "",
+    });
+    setMostrarForm(true);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setGuardando(true);
 
-    const { error } = await supabase.from("polizas").insert({
+    const datos = {
       ...form,
       fecha_inicio: form.fecha_inicio || null,
       fecha_vencimiento: form.fecha_vencimiento || null,
-      creado_por: session?.user?.id,
-    });
+    };
+
+    const { error } = editandoId
+      ? await supabase.from("polizas").update(datos).eq("id", editandoId)
+      : await supabase
+          .from("polizas")
+          .insert({ ...datos, creado_por: session?.user?.id });
 
     setGuardando(false);
 
@@ -79,8 +115,25 @@ function PolizasTab() {
     }
 
     setForm(FORM_VACIO);
+    setEditandoId(null);
     setMostrarForm(false);
     cargarPolizas();
+  };
+
+  const borrarPoliza = async (id, nombre) => {
+    const confirmado = window.confirm(
+      `¿Seguro que quieres borrar la póliza de "${nombre}"? Esta acción no se puede deshacer.`
+    );
+    if (!confirmado) return;
+
+    const { error } = await supabase.from("polizas").delete().eq("id", id);
+
+    if (error) {
+      alert("No se pudo borrar la póliza.");
+      return;
+    }
+
+    setPolizas((prev) => prev.filter((p) => p.id !== id));
   };
 
   const polizasFiltradas = polizas.filter((p) => {
@@ -105,10 +158,7 @@ function PolizasTab() {
           onChange={(e) => setBusqueda(e.target.value)}
         />
 
-        <button
-          className="adminNuevaPolizaBtn"
-          onClick={() => setMostrarForm(true)}
-        >
+        <button className="adminNuevaPolizaBtn" onClick={abrirNueva}>
           + Nueva póliza
         </button>
 
@@ -136,6 +186,8 @@ function PolizasTab() {
                 <th>Nº póliza</th>
                 <th>Vencimiento</th>
                 <th>Estado</th>
+                <th>Creada por</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
@@ -177,6 +229,29 @@ function PolizasTab() {
                         {p.estado}
                       </span>
                     </td>
+                    <td className="adminCreadoPor">
+                      {p.creador?.email || "—"}
+                    </td>
+                    <td>
+                      <div className="adminAccionesFila">
+                        <button
+                          className="adminEditarBtn"
+                          onClick={() => abrirEdicion(p)}
+                          title="Editar póliza"
+                        >
+                          ✎
+                        </button>
+                        {esAdmin && (
+                          <button
+                            className="adminBorrarBtn"
+                            onClick={() => borrarPoliza(p.id, p.cliente_nombre)}
+                            title="Borrar póliza"
+                          >
+                            🗑
+                          </button>
+                        )}
+                      </div>
+                    </td>
                   </tr>
                 );
               })}
@@ -186,13 +261,16 @@ function PolizasTab() {
       )}
 
       {mostrarForm && (
-        <div className="adminModalOverlay" onClick={() => setMostrarForm(false)}>
+        <div
+          className="adminModalOverlay"
+          onClick={() => setMostrarForm(false)}
+        >
           <form
             className="adminModal"
             onClick={(e) => e.stopPropagation()}
             onSubmit={handleSubmit}
           >
-            <h2>Nueva póliza</h2>
+            <h2>{editandoId ? "Editar póliza" : "Nueva póliza"}</h2>
 
             <label>Nombre del cliente *</label>
             <input
@@ -269,6 +347,19 @@ function PolizasTab() {
               </div>
             </div>
 
+            {editandoId && (
+              <>
+                <label>Estado</label>
+                <select value={form.estado} onChange={handleChange("estado")}>
+                  {ESTADOS_POLIZA.map((e) => (
+                    <option key={e} value={e}>
+                      {e}
+                    </option>
+                  ))}
+                </select>
+              </>
+            )}
+
             <label>Notas</label>
             <textarea
               rows="3"
@@ -285,7 +376,11 @@ function PolizasTab() {
                 Cancelar
               </button>
               <button type="submit" disabled={guardando}>
-                {guardando ? "Guardando..." : "Guardar póliza"}
+                {guardando
+                  ? "Guardando..."
+                  : editandoId
+                  ? "Guardar cambios"
+                  : "Guardar póliza"}
               </button>
             </div>
           </form>

@@ -1,9 +1,13 @@
 import { useEffect, useState } from "react";
 import { supabase } from "../../lib/supabaseClient";
+import { useAuth } from "../../context/AuthContext";
 
 const ESTADOS = ["NUEVO", "CONTACTADO", "CERRADO"];
 
 function ExpedientesTab() {
+  const { perfil } = useAuth();
+  const esAdmin = perfil?.rol === "admin";
+
   const [expedientes, setExpedientes] = useState([]);
   const [cargando, setCargando] = useState(true);
   const [filtroEstado, setFiltroEstado] = useState("TODOS");
@@ -38,6 +42,22 @@ function ExpedientesTab() {
       alert("No se pudo actualizar el estado. Inténtalo de nuevo.");
       cargarExpedientes();
     }
+  };
+
+  const borrarExpediente = async (id, nombre) => {
+    const confirmado = window.confirm(
+      `¿Seguro que quieres borrar el expediente de "${nombre}"? Esta acción no se puede deshacer.`
+    );
+    if (!confirmado) return;
+
+    const { error } = await supabase.from("expedientes").delete().eq("id", id);
+
+    if (error) {
+      alert("No se pudo borrar el expediente.");
+      return;
+    }
+
+    setExpedientes((prev) => prev.filter((exp) => exp.id !== id));
   };
 
   const expedientesFiltrados = expedientes.filter((exp) => {
@@ -97,6 +117,7 @@ function ExpedientesTab() {
                 <th>Página</th>
                 <th>Referencia</th>
                 <th>Estado</th>
+                {esAdmin && <th></th>}
               </tr>
             </thead>
             <tbody>
@@ -130,6 +151,17 @@ function ExpedientesTab() {
                       ))}
                     </select>
                   </td>
+                  {esAdmin && (
+                    <td>
+                      <button
+                        className="adminBorrarBtn"
+                        onClick={() => borrarExpediente(exp.id, exp.nombre)}
+                        title="Borrar expediente"
+                      >
+                        🗑
+                      </button>
+                    </td>
+                  )}
                 </tr>
               ))}
             </tbody>

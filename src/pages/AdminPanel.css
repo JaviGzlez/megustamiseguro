@@ -344,6 +344,42 @@
   color: #555;
 }
 
+/* ACCIONES DE FILA (editar / borrar) */
+
+.adminAccionesFila {
+  display: flex;
+  gap: 6px;
+}
+
+.adminEditarBtn,
+.adminBorrarBtn {
+  border: 1px solid #e0e0e0;
+  background: white;
+  border-radius: 6px;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adminEditarBtn:hover {
+  background: #e3f2fd;
+  border-color: #0b4ea2;
+}
+
+.adminBorrarBtn:hover {
+  background: #ffebee;
+  border-color: #d32f2f;
+}
+
+.adminCreadoPor {
+  font-size: 12px;
+  color: #888;
+}
+
 @media (max-width: 700px) {
   .adminPanelContent {
     padding: 20px;
