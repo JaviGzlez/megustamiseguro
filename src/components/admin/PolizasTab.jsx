@@ -216,7 +216,8 @@ function PolizasTab() {
             <thead>
               <tr>
                 <th>Cliente</th>
-                <th>Contacto</th>
+                <th>Teléfono</th>
+                <th>Email</th>
                 <th>Tipo de seguro</th>
                 <th>Compañía</th>
                 <th>Nº póliza</th>
@@ -236,11 +237,8 @@ function PolizasTab() {
                 return (
                   <tr key={p.id}>
                     <td>{p.cliente_nombre}</td>
-                    <td>
-                      {p.cliente_telefono}
-                      {p.cliente_telefono && p.cliente_email && " · "}
-                      {p.cliente_email}
-                    </td>
+                    <td className="adminColCorta">{p.cliente_telefono || "—"}</td>
+                    <td>{p.cliente_email || "—"}</td>
                     <td>{p.tipo_seguro}</td>
                     <td>{p.compania || "—"}</td>
                     <td>{p.numero_poliza || "—"}</td>
