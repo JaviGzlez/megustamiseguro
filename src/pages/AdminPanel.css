@@ -1,0 +1,184 @@
+.adminPanel {
+  min-height: 100vh;
+  background: #f4f6f8;
+}
+
+.adminPanelHeader {
+  background: white;
+  border-bottom: 1px solid #e8f0f8;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.adminPanelHeader img {
+  height: 44px;
+}
+
+.adminPanelHeaderRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+  color: #555;
+}
+
+.adminLogoutBtn {
+  border: 1px solid #e0e0e0;
+  background: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: #073b78;
+}
+
+.adminLogoutBtn:hover {
+  background: #f4f6f8;
+}
+
+.adminPanelContent {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.adminPanelContent h1 {
+  font-size: 26px;
+  color: #073b78;
+  margin: 0 0 20px;
+}
+
+.adminPanelToolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.adminPanelToolbar input[type="text"] {
+  flex: 1;
+  min-width: 260px;
+  padding: 10px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.adminFiltroEstados {
+  display: flex;
+  gap: 6px;
+}
+
+.adminFiltroEstados button {
+  border: 1px solid #e0e0e0;
+  background: white;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #555;
+}
+
+.adminFiltroEstados button.activo {
+  background: #0b4ea2;
+  border-color: #0b4ea2;
+  color: white;
+}
+
+.adminRefreshBtn {
+  border: none;
+  background: #f28c28;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.adminPanelVacio {
+  text-align: center;
+  color: #888;
+  padding: 60px 0;
+}
+
+.adminTableWrapper {
+  background: white;
+  border-radius: 12px;
+  overflow-x: auto;
+  box-shadow: 0 8px 24px rgba(11, 78, 162, 0.06);
+}
+
+.adminTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.adminTable th {
+  text-align: left;
+  padding: 14px 16px;
+  background: #f4f6f8;
+  color: #555;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.adminTable td {
+  padding: 14px 16px;
+  border-top: 1px solid #f0f0f0;
+  white-space: nowrap;
+}
+
+.adminHora {
+  color: #999;
+  font-size: 12px;
+}
+
+.adminReferencia {
+  font-family: monospace;
+  font-size: 12px;
+  color: #888;
+}
+
+.adminEstado {
+  border: none;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.adminEstado-NUEVO {
+  background: #fff4e5;
+  color: #b46b00;
+}
+
+.adminEstado-CONTACTADO {
+  background: #e3f2fd;
+  color: #0b4ea2;
+}
+
+.adminEstado-CERRADO {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+@media (max-width: 700px) {
+  .adminPanelContent {
+    padding: 20px;
+  }
+
+  .adminPanelToolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

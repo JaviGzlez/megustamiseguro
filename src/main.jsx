@@ -24,10 +24,15 @@ import AvisoLegal from "./pages/AvisoLegal";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 import PoliticaCookies from "./pages/PoliticaCookies";
 import CookieConsentBanner from "./components/CookieConsentBanner";
+import { AuthProvider } from "./context/AuthContext";
+import RutaProtegida from "./components/RutaProtegida";
+import AdminLogin from "./pages/AdminLogin";
+import AdminPanel from "./pages/AdminPanel";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <HelmetProvider>
+    <AuthProvider>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -72,10 +77,21 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/aviso-legal" element={<AvisoLegal />} />
         <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
         <Route path="/politica-cookies" element={<PoliticaCookies />} />
+
+        <Route path="/panel/login" element={<AdminLogin />} />
+        <Route
+          path="/panel"
+          element={
+            <RutaProtegida>
+              <AdminPanel />
+            </RutaProtegida>
+          }
+        />
       </Routes>
 
       <CookieConsentBanner />
     </BrowserRouter>
+    </AuthProvider>
     </HelmetProvider>
   </React.StrictMode>
 );
