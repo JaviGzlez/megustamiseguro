@@ -40,6 +40,15 @@
   transition: 0.3s;
 }
 
+.miCuentaBtn {
+  background: #0b4ea2;
+  color: white;
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-weight: 900;
+}
+
 .blogHeaderBtn:hover {
   transform: translateY(-2px);
 }
@@ -293,4 +302,9 @@
   .legalContent {
     padding: 100px 20px 60px;
   }
+}
+.headerAcciones {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }

@@ -47,12 +47,17 @@ function SeguroVida() {
           <a href="#tipos">Tipos</a>
           <a href="/blog">Blog</a>
           <a href="#contacto">Contacto</a>
-          <a href="/mi-cuenta">Mi cuenta</a>
         </nav>
 
-        <a href="#contacto" className="lifeHeaderBtn">
+        <div className="headerAcciones">
+          <a href="#contacto" className="lifeHeaderBtn">
           Solicitar Estudio
-        </a>
+          </a>
+
+          <a href="/mi-cuenta" className="miCuentaBtn">
+          Mi cuenta
+          </a>
+        </div>
       </header>
 
       <section className="lifeHero">

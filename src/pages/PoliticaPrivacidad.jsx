@@ -42,12 +42,17 @@ function PoliticaPrivacidad() {
           <a href="/#seguros">Seguros</a>
           <a href="/blog">Blog</a>
           <a href="/#contacto">Contacto</a>
-          <a href="/mi-cuenta">Mi cuenta</a>
         </nav>
 
-        <a href="/#contacto" className="blogHeaderBtn">
+        <div className="headerAcciones">
+          <a href="/#contacto" className="blogHeaderBtn">
           Solicitar Estudio
-        </a>
+          </a>
+
+          <a href="/mi-cuenta" className="miCuentaBtn">
+          Mi cuenta
+          </a>
+        </div>
       </header>
 
       <section className="legalContent">

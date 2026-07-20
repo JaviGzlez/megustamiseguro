@@ -19,7 +19,7 @@
 /* HEADER */
 
 .carHeader {
-  height: 84px;
+  height: 116px;
   padding: 0 clamp(22px, 6vw, 90px);
   display: flex;
   align-items: center;
@@ -68,6 +68,15 @@
 .carHeaderBtn {
   padding: 13px 22px;
   white-space: nowrap;
+}
+
+.miCuentaBtn {
+  background: #0b4ea2;
+  color: white;
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-weight: 900;
 }
 
 /* HERO */
@@ -675,7 +684,7 @@
 
 @media (max-width: 700px) {
   .carHeader {
-    height: 76px;
+    height: 96px;
   }
 
   .carHeaderLogo {
@@ -716,4 +725,9 @@
   .carFooterContainer {
     text-align: center;
   }
+}
+.headerAcciones {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
