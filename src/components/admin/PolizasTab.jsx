@@ -64,6 +64,7 @@ function PolizasTab() {
   const [editandoId, setEditandoId] = useState(null);
   const [form, setForm] = useState(FORM_VACIO);
   const [guardando, setGuardando] = useState(false);
+  const [emailOriginal, setEmailOriginal] = useState("");
 
   const cargarPolizas = async () => {
     setCargando(true);
@@ -89,11 +90,13 @@ function PolizasTab() {
   const abrirNueva = () => {
     setEditandoId(null);
     setForm(FORM_VACIO);
+    setEmailOriginal("");
     setMostrarForm(true);
   };
 
   const abrirEdicion = (p) => {
     setEditandoId(p.id);
+    setEmailOriginal(p.cliente_email || "");
     setForm({
       cliente_nombre: p.cliente_nombre || "",
       cliente_email: p.cliente_email || "",
@@ -133,10 +136,18 @@ function PolizasTab() {
       return;
     }
 
-    // Si es una póliza nueva y tiene email, invitamos al cliente a
-    // crear su cuenta para que pueda consultarla. Si ya tenía cuenta,
-    // la función simplemente no hace nada (no se reenvía el correo).
-    if (esNueva && datos.cliente_email) {
+    // Invitamos al cliente en dos casos: (1) es una póliza nueva con
+    // email, o (2) se ha editado y el email ha cambiado respecto al
+    // que tenía antes (por ejemplo, para corregir un error de tecleo).
+    // Si el email no ha cambiado, no hacemos nada — evita reenviar
+    // invitaciones de más cada vez que se edita cualquier otro campo.
+    const emailHaCambiado =
+      !!editandoId &&
+      !!datos.cliente_email &&
+      datos.cliente_email.trim().toLowerCase() !==
+        emailOriginal.trim().toLowerCase();
+
+    if ((esNueva || emailHaCambiado) && datos.cliente_email) {
       const { error: errorInvite } = await supabase.functions.invoke(
         "invitar-cliente",
         { body: { email: datos.cliente_email, nombre: datos.cliente_nombre } }
@@ -151,6 +162,7 @@ function PolizasTab() {
 
     setGuardando(false);
     setForm(FORM_VACIO);
+    setEmailOriginal("");
     setEditandoId(null);
     setMostrarForm(false);
     cargarPolizas();
