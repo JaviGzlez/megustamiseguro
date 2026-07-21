@@ -91,7 +91,14 @@ Deno.serve(async (req) => {
 
     if (error) {
       // Si el cliente ya tenía cuenta, no lo tratamos como fallo real.
-      if (error.message?.toLowerCase().includes("already registered")) {
+      // Supabase puede decir "already registered" o "already been
+      // registered" según la versión, así que comprobamos ambas
+      // palabras por separado en vez de la frase exacta.
+      const mensaje = error.message?.toLowerCase() || "";
+      const yaRegistrado =
+        mensaje.includes("already") && mensaje.includes("registered");
+
+      if (yaRegistrado) {
         return new Response(JSON.stringify({ ok: true, yaExistia: true }), {
           status: 200,
           headers: corsHeaders,
