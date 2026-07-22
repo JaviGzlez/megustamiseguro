@@ -35,6 +35,7 @@ function AvisosRenovacion() {
   const [seguimientos, setSeguimientos] = useState({});
   const [abiertoId, setAbiertoId] = useState(null);
   const [renovandoId, setRenovandoId] = useState(null);
+  const [historialAbiertoId, setHistorialAbiertoId] = useState(null);
   const [nuevaFecha, setNuevaFecha] = useState("");
   const [formContacto, setFormContacto] = useState({
     contactado: true,
@@ -172,6 +173,51 @@ function AvisosRenovacion() {
                   {ultimo.contactado ? "contestó" : "no contestó"}
                   {ultimo.whatsapp_enviado && " — WhatsApp enviado"}
                   {ultimo.notas && ` — "${ultimo.notas}"`}
+                  {historial.length > 1 && (
+                    <button
+                      className="avisoVerHistorialBtn"
+                      onClick={() =>
+                        setHistorialAbiertoId(
+                          historialAbiertoId === p.id ? null : p.id
+                        )
+                      }
+                    >
+                      {historialAbiertoId === p.id
+                        ? "Ocultar historial"
+                        : `Ver historial completo (${historial.length})`}
+                    </button>
+                  )}
+                </div>
+              )}
+
+              {historialAbiertoId === p.id && (
+                <div className="avisoHistorialCompleto">
+                  {historial.map((h) => (
+                    <div key={h.id} className="avisoHistorialFila">
+                      <span className="avisoHistorialFecha">
+                        {formatoFechaHora(h.fecha_hora)}
+                      </span>
+                      <span
+                        className={
+                          h.contactado
+                            ? "avisoHistorialEstado avisoHistorialEstado-ok"
+                            : "avisoHistorialEstado avisoHistorialEstado-no"
+                        }
+                      >
+                        {h.contactado ? "Contestó" : "No contestó"}
+                      </span>
+                      {h.whatsapp_enviado && (
+                        <span className="avisoHistorialWhatsapp">
+                          WhatsApp enviado
+                        </span>
+                      )}
+                      {h.notas && (
+                        <span className="avisoHistorialNota">
+                          "{h.notas}"
+                        </span>
+                      )}
+                    </div>
+                  ))}
                 </div>
               )}
 
