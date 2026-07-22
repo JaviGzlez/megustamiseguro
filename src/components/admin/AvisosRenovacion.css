@@ -16,26 +16,26 @@
 .avisosRenovacionLista {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .avisoItem {
-  display: flex;
-  align-items: center;
-  gap: 16px;
   background: white;
   border-radius: 8px;
-  padding: 10px 14px;
-  font-size: 13px;
-  flex-wrap: wrap;
+  padding: 12px 14px;
+  border-left: 4px solid #f2c94c;
 }
 
 .avisoItem-urgente {
   border-left: 4px solid #d32f2f;
 }
 
-.avisoItem:not(.avisoItem-urgente) {
-  border-left: 4px solid #f2c94c;
+.avisoFilaPrincipal {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 13px;
+  flex-wrap: wrap;
 }
 
 .avisoCliente {
@@ -61,4 +61,111 @@
 
 .avisoItem:not(.avisoItem-urgente) .avisoDias {
   color: #8a6d00;
+}
+
+.avisoUltimoContacto {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #888;
+  font-style: italic;
+}
+
+.avisoAcciones {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.avisoAccionBtn {
+  border: 1px solid #e0e0e0;
+  background: #f8f9fa;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.avisoAccionBtn:hover {
+  background: #eef1f4;
+}
+
+.avisoAccionBtnRenovar:hover {
+  background: #e3f7e8;
+  border-color: #1c8a3e;
+}
+
+.avisoFormulario {
+  margin-top: 12px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.avisoRadioLabel,
+.avisoCheckLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #333;
+}
+
+.avisoFechaLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: #333;
+}
+
+.avisoFormulario textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 13px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.avisoFormulario input[type="date"] {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 13px;
+}
+
+.avisoFormularioBotones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.avisoCancelarBtn {
+  border: 1px solid #e0e0e0;
+  background: white;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.avisoGuardarBtn {
+  border: none;
+  background: #0b4ea2;
+  color: white;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.avisoGuardarBtn:disabled {
+  opacity: 0.6;
+  cursor: default;
 }
