@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import ExpedientesTab from "../components/admin/ExpedientesTab";
 import PolizasTab from "../components/admin/PolizasTab";
+import AvisosRenovacion from "../components/admin/AvisosRenovacion";
 import "./AdminPanel.css";
 
 function AdminPanel() {
@@ -27,6 +28,8 @@ function AdminPanel() {
 
       <main className="adminPanelContent">
         <h1>Panel interno</h1>
+
+        <AvisosRenovacion />
 
         <div className="adminTabs">
           <button
