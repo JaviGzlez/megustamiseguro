@@ -168,6 +168,25 @@ function PolizasTab() {
     cargarPolizas();
   };
 
+  const restablecerAcceso = async (email) => {
+    if (!email) return;
+    const confirmado = window.confirm(
+      `¿Enviar un email a ${email} para que restablezca su contraseña?`
+    );
+    if (!confirmado) return;
+
+    const { error } = await supabase.auth.resetPasswordForEmail(email, {
+      redirectTo: "https://megustamiseguro.es/crear-contrasena",
+    });
+
+    if (error) {
+      alert("No se pudo enviar el email de restablecimiento.");
+      return;
+    }
+
+    alert(`Email de restablecimiento enviado a ${email}.`);
+  };
+
   const borrarPoliza = async (id, nombre) => {
     const confirmado = window.confirm(
       `¿Seguro que quieres borrar la póliza de "${nombre}"? Esta acción no se puede deshacer.`
@@ -291,6 +310,15 @@ function PolizasTab() {
                         >
                           ✎
                         </button>
+                        {p.cliente_email && (
+                          <button
+                            className="adminResetBtn"
+                            onClick={() => restablecerAcceso(p.cliente_email)}
+                            title="Restablecer acceso del cliente"
+                          >
+                            🔑
+                          </button>
+                        )}
                         {esAdmin && (
                           <button
                             className="adminBorrarBtn"

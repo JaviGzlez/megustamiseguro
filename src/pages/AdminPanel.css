@@ -362,7 +362,8 @@
 }
 
 .adminEditarBtn,
-.adminBorrarBtn {
+.adminBorrarBtn,
+.adminResetBtn {
   border: 1px solid #e0e0e0;
   background: white;
   border-radius: 6px;
@@ -383,6 +384,11 @@
 .adminBorrarBtn:hover {
   background: #ffebee;
   border-color: #d32f2f;
+}
+
+.adminResetBtn:hover {
+  background: #fff8e1;
+  border-color: #f28c28;
 }
 
 .adminCreadoPor {
