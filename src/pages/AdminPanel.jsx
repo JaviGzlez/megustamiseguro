@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useAuth } from "../context/AuthContext";
+import { supabase } from "../lib/supabaseClient";
 import ExpedientesTab from "../components/admin/ExpedientesTab";
 import PolizasTab from "../components/admin/PolizasTab";
 import AvisosRenovacion from "../components/admin/AvisosRenovacion";
@@ -8,6 +9,19 @@ import "./AdminPanel.css";
 function AdminPanel() {
   const { session, perfil, cerrarSesion } = useAuth();
   const [tab, setTab] = useState("expedientes");
+  const [nuevosExpedientes, setNuevosExpedientes] = useState(0);
+
+  const cargarContadorNuevos = async () => {
+    const { count } = await supabase
+      .from("expedientes")
+      .select("id", { count: "exact", head: true })
+      .eq("estado", "NUEVO");
+    setNuevosExpedientes(count || 0);
+  };
+
+  useEffect(() => {
+    cargarContadorNuevos();
+  }, [tab]);
 
   return (
     <div className="adminPanel">
@@ -37,6 +51,9 @@ function AdminPanel() {
             onClick={() => setTab("expedientes")}
           >
             Expedientes
+            {nuevosExpedientes > 0 && (
+              <span className="adminTabBadge">{nuevosExpedientes}</span>
+            )}
           </button>
           <button
             className={tab === "polizas" ? "activo" : ""}
@@ -46,7 +63,11 @@ function AdminPanel() {
           </button>
         </div>
 
-        {tab === "expedientes" ? <ExpedientesTab /> : <PolizasTab />}
+        {tab === "expedientes" ? (
+          <ExpedientesTab onCambio={cargarContadorNuevos} />
+        ) : (
+          <PolizasTab />
+        )}
       </main>
     </div>
   );

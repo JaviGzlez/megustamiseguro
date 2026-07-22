@@ -4,7 +4,7 @@ import { useAuth } from "../../context/AuthContext";
 
 const ESTADOS = ["NUEVO", "CONTACTADO", "CERRADO"];
 
-function ExpedientesTab() {
+function ExpedientesTab({ onCambio }) {
   const { perfil } = useAuth();
   const esAdmin = perfil?.rol === "admin";
 
@@ -42,6 +42,7 @@ function ExpedientesTab() {
       alert("No se pudo actualizar el estado. Inténtalo de nuevo.");
       cargarExpedientes();
     }
+    onCambio?.();
   };
 
   const borrarExpediente = async (id, nombre) => {
@@ -58,6 +59,7 @@ function ExpedientesTab() {
     }
 
     setExpedientes((prev) => prev.filter((exp) => exp.id !== id));
+    onCambio?.();
   };
 
   const expedientesFiltrados = expedientes.filter((exp) => {
