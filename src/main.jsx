@@ -19,6 +19,7 @@ import ArticuloSeguroHogar from "./pages/ArticuloSeguroHogar";
 import ArticuloSeguroSalud from "./pages/ArticuloSeguroSalud";
 import ArticuloSeguroVida from "./pages/ArticuloSeguroVida";
 import ArticuloSeguroMascotas from "./pages/ArticuloSeguroMascotas";
+import ArticuloSeguroGatos from "./pages/ArticuloSeguroGatos";
 import ArticuloAutonomos from "./pages/ArticuloAutonomos";
 import AvisoLegal from "./pages/AvisoLegal";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
@@ -72,6 +73,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route
           path="/blog/seguro-para-perros-que-debes-tener-en-cuenta"
           element={<ArticuloSeguroMascotas />}
+        />
+        <Route
+          path="/blog/seguro-para-gatos-que-debes-tener-en-cuenta"
+          element={<ArticuloSeguroGatos />}
         />
         <Route
            path="/blog/seguros-para-autonomos"

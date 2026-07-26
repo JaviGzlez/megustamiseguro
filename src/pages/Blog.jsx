@@ -29,6 +29,11 @@ function Blog() {
       url: "/blog/seguro-para-perros-que-debes-tener-en-cuenta",
     },
     {
+      title: "Seguro para gatos: qué debes tener en cuenta",
+      text: "Asistencia veterinaria, coberturas frecuentes en gatos y cómo elegir la mejor póliza.",
+      url: "/blog/seguro-para-gatos-que-debes-tener-en-cuenta",
+    },
+    {
       title: "Seguros para autónomos: trabajar con más tranquilidad",
       text: "Responsabilidad civil, accidentes, comercio, salud y protección profesional.",
       url: "/blog/seguros-para-autonomos",
