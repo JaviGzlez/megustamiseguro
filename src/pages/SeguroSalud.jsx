@@ -1,6 +1,7 @@
 import "./SeguroSalud.css";
 import { Helmet } from "react-helmet-async";
 import OrganizationSchema from "../components/OrganizationSchema";
+import FaqSchema from "../components/FaqSchema";
 import LeadForm from "../components/LeadForm";
 import QuickContactModal from "../components/QuickContactModal";
 import SocialLinks from "../components/SocialLinks";
@@ -9,28 +10,53 @@ function SeguroSalud() {
   return (
     <main className="healthPage">
       <Helmet>
-        <title>Seguro de Salud | Con o sin copago | Me Gusta Mi Seguro</title>
+        <title>Seguro Médico y de Salud | Con o sin Copago | Me Gusta Mi Seguro</title>
         <meta
           name="description"
-          content="Compara seguros de salud, con y sin copago, y elige el cuadro médico que mejor se ajusta a tus necesidades y presupuesto."
+          content="Compara seguros médicos y de salud, con y sin copago, y encuentra la cobertura médica que mejor se adapta a ti y a tu familia."
         />
               <link rel="canonical" href="https://megustamiseguro.es/seguro-salud" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Seguro de Salud | Con o sin copago | Me Gusta Mi Seguro" />
-        <meta property="og:description" content="Compara seguros de salud, con y sin copago, y elige el cuadro médico que mejor se ajusta a tus necesidades y presupuesto." />
+        <meta property="og:title" content="Seguro Médico y de Salud | Con o sin Copago | Me Gusta Mi Seguro" />
+        <meta property="og:description" content="Compara seguros médicos y de salud, con y sin copago, y encuentra la cobertura médica que mejor se adapta a ti y a tu familia." />
         <meta property="og:url" content="https://megustamiseguro.es/seguro-salud" />
         <meta property="og:image" content="https://megustamiseguro.es/og-image.jpg" />
         <meta property="og:locale" content="es_ES" />
         <meta property="og:site_name" content="Me Gusta Mi Seguro" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Seguro de Salud | Con o sin copago | Me Gusta Mi Seguro" />
-        <meta name="twitter:description" content="Compara seguros de salud, con y sin copago, y elige el cuadro médico que mejor se ajusta a tus necesidades y presupuesto." />
+        <meta name="twitter:title" content="Seguro Médico y de Salud | Con o sin Copago | Me Gusta Mi Seguro" />
+        <meta name="twitter:description" content="Compara seguros médicos y de salud, con y sin copago, y encuentra la cobertura médica que mejor se adapta a ti y a tu familia." />
         <meta name="twitter:image" content="https://megustamiseguro.es/og-image.jpg" />
       </Helmet>
 
       <OrganizationSchema />
+
+      <FaqSchema
+        items={[
+          {
+            question: "¿Qué son las carencias en un seguro de salud?",
+            answer:
+              "Son periodos de tiempo desde la contratación durante los cuales algunas coberturas pueden no estar disponibles. Te ayudamos a revisarlas antes de contratar.",
+          },
+          {
+            question: "¿Qué diferencia hay entre copago y sin copago?",
+            answer:
+              "Con copago puedes pagar una cantidad por determinados servicios. Sin copago, normalmente pagas una prima más alta pero sin esos pagos adicionales por uso.",
+          },
+          {
+            question: "¿Puedo contratar desde cualquier lugar de España?",
+            answer:
+              "Sí. Trabajamos de forma online y telefónica, por lo que podemos ayudarte independientemente de dónde vivas.",
+          },
+          {
+            question: "¿Qué cobertura médica incluye un seguro de salud?",
+            answer:
+              "La cobertura médica varía según la compañía y la modalidad contratada, pero suele incluir medicina general, atención de especialistas, pruebas diagnósticas y, en muchos casos, urgencias y hospitalización.",
+          },
+        ]}
+      />
 
       <header className="healthHeader">
         <a href="/">
@@ -65,12 +91,12 @@ function SeguroSalud() {
           <div>
             <p className="healthBreadcrumb">Seguros · Salud</p>
 
-            <h1>Tu salud, con la atención que mereces.</h1>
+            <h1>Seguro médico y de salud, con la atención que mereces.</h1>
 
             <p className="healthHeroText">
-              Te ayudamos a encontrar un seguro de salud adaptado a ti, a tu
-              familia y a tus necesidades reales. Comparamos opciones y te
-              acompañamos para que elijas con tranquilidad.
+              Te ayudamos a encontrar un seguro médico adaptado a ti, a tu
+              familia y a tus necesidades reales. Comparamos opciones y
+              cobertura médica para que elijas con tranquilidad.
             </p>
 
             <div className="healthButtons">
@@ -353,6 +379,17 @@ function SeguroSalud() {
               <p>
                 Sí. Trabajamos de forma online y telefónica, por lo que podemos
                 ayudarte independientemente de dónde vivas.
+              </p>
+            </div>
+
+            <div className="healthFaqItem">
+              <h3>¿Qué cobertura médica incluye un seguro de salud?</h3>
+              <p>
+                La cobertura médica varía según la compañía y la modalidad
+                contratada, pero suele incluir medicina general, atención de
+                especialistas, pruebas diagnósticas y, en muchos casos,
+                urgencias y hospitalización. Te ayudamos a comparar la
+                cobertura médica real de cada opción antes de que decidas.
               </p>
             </div>
           </div>
