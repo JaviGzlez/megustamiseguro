@@ -15,6 +15,7 @@ import EmpresasAutonomos from "./pages/EmpresasAutonomos";
 import TransporteMercancia from "./pages/TransporteMercancia";
 import Blog from "./pages/Blog";
 import ArticuloSeguroCoche from "./pages/ArticuloSeguroCoche";
+import ArticuloSeguroCocheTodoRiesgoTerceros from "./pages/ArticuloSeguroCocheTodoRiesgoTerceros";
 import ArticuloSeguroHogar from "./pages/ArticuloSeguroHogar";
 import ArticuloSeguroSalud from "./pages/ArticuloSeguroSalud";
 import ArticuloSeguroVida from "./pages/ArticuloSeguroVida";
@@ -57,6 +58,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route
           path="/blog/como-elegir-seguro-coche-2026"
           element={<ArticuloSeguroCoche />}
+        />
+        <Route
+          path="/blog/seguro-coche-todo-riesgo-vs-terceros"
+          element={<ArticuloSeguroCocheTodoRiesgoTerceros />}
         />
         <Route
           path="/blog/que-cubre-realmente-un-seguro-de-hogar"

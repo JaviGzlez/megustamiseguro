@@ -9,6 +9,11 @@ function Blog() {
       url: "/blog/como-elegir-seguro-coche-2026",
     },
     {
+      title: "Seguro de coche a todo riesgo vs terceros: ¿cuál te conviene?",
+      text: "Diferencias reales, precios y cómo elegir según tu coche y tu forma de conducir.",
+      url: "/blog/seguro-coche-todo-riesgo-vs-terceros",
+    },
+    {
       title: "Qué cubre realmente un seguro de hogar",
       text: "Continente, contenido, responsabilidad civil y coberturas importantes.",
       url: "/blog/que-cubre-realmente-un-seguro-de-hogar",
