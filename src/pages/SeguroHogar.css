@@ -36,6 +36,10 @@
 .homeHeaderLogo {
   height: 100px;
   object-fit: contain;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ffffff;
 }
 
 .homeNav {
@@ -689,6 +693,7 @@
 
   .homeHeaderLogo {
     height: 80px;
+    width: 80px;
   }
 
   .homeHeaderBtn {
@@ -696,8 +701,9 @@
   }
 
   .homeHero h1 {
-    font-size: clamp(40px, 12vw, 54px);
-    letter-spacing: -2px;
+    font-size: clamp(32px, 9vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -1px;
   }
 
   .homeHeroVisual,

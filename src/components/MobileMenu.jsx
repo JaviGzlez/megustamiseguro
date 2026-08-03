@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import "./MobileMenu.css";
 
 // Menú hamburguesa reutilizable para móvil/tablet (aparece por debajo de
@@ -41,33 +42,45 @@ function MobileMenu({ links = [], ctaHref = "#contacto", ctaLabel = "Solicitar e
         <span className={open ? "isOpen" : ""} />
       </button>
 
-      <div className={`mobileMenuOverlay ${open ? "isOpen" : ""}`}>
-        <nav className="mobileMenuNav">
-          {links.map((link) => (
-            <a key={link.href} href={link.href} onClick={() => setOpen(false)}>
-              {link.label}
+      {createPortal(
+        <div className={`mobileMenuOverlay ${open ? "isOpen" : ""}`}>
+          <button
+            type="button"
+            className="mobileMenuClose"
+            aria-label="Cerrar menú"
+            onClick={() => setOpen(false)}
+          >
+            ✕
+          </button>
+
+          <nav className="mobileMenuNav">
+            {links.map((link) => (
+              <a key={link.href} href={link.href} onClick={() => setOpen(false)}>
+                {link.label}
+              </a>
+            ))}
+          </nav>
+
+          <div className="mobileMenuActions">
+            <a
+              href={ctaHref}
+              className="mobileMenuCta"
+              onClick={() => setOpen(false)}
+            >
+              {ctaLabel}
             </a>
-          ))}
-        </nav>
 
-        <div className="mobileMenuActions">
-          <a
-            href={ctaHref}
-            className="mobileMenuCta"
-            onClick={() => setOpen(false)}
-          >
-            {ctaLabel}
-          </a>
-
-          <a
-            href="/mi-cuenta"
-            className="mobileMenuAccount"
-            onClick={() => setOpen(false)}
-          >
-            Mi cuenta
-          </a>
-        </div>
-      </div>
+            <a
+              href="/mi-cuenta"
+              className="mobileMenuAccount"
+              onClick={() => setOpen(false)}
+            >
+              Mi cuenta
+            </a>
+          </div>
+        </div>,
+        document.body
+      )}
     </>
   );
 }

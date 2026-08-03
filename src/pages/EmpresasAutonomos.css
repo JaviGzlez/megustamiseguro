@@ -36,6 +36,10 @@
 .businessHeaderLogo {
   height: 100px;
   object-fit: contain;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ffffff;
 }
 
 .businessNav {
@@ -689,6 +693,7 @@
 
   .businessHeaderLogo {
     height: 80px;
+    width: 80px;
   }
 
   .businessHeaderBtn {

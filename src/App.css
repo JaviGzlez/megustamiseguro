@@ -53,6 +53,10 @@ body {
 .headerLogo {
   height: 100px;
   object-fit: contain;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ffffff;
 }
 
 .nav {
@@ -498,6 +502,12 @@ body {
 }
 
 @media (max-width: 700px) {
+
+  .hero h1 {
+    font-size: clamp(32px, 9vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+  }
 
   .headerBtn {
     display: none;
