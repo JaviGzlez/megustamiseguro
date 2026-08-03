@@ -4,6 +4,7 @@ import OrganizationSchema from "../components/OrganizationSchema";
 import LeadForm from "../components/LeadForm";
 import QuickContactModal from "../components/QuickContactModal";
 import SocialLinks from "../components/SocialLinks";
+import MobileMenu from "../components/MobileMenu";
 
 function Home() {
   return (
@@ -58,6 +59,16 @@ function Home() {
           Mi cuenta
           </a>
         </div>
+
+        <MobileMenu
+          links={[
+            { href: "/", label: "Inicio" },
+            { href: "#seguros", label: "Seguros" },
+            { href: "#nosotros", label: "Nosotros" },
+            { href: "/blog", label: "Blog" },
+            { href: "#contacto", label: "Contacto" },
+          ]}
+        />
       </header>
 
       <section className="hero">

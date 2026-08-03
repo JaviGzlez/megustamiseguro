@@ -5,6 +5,7 @@ import FaqSchema from "../components/FaqSchema";
 import LeadForm from "../components/LeadForm";
 import QuickContactModal from "../components/QuickContactModal";
 import SocialLinks from "../components/SocialLinks";
+import MobileMenu from "../components/MobileMenu";
 
 function SeguroSalud() {
   return (
@@ -84,6 +85,16 @@ function SeguroSalud() {
           Mi cuenta
           </a>
         </div>
+
+        <MobileMenu
+          links={[
+            { href: "/", label: "Inicio" },
+            { href: "#coberturas", label: "Coberturas" },
+            { href: "#tipos", label: "Tipos" },
+            { href: "/blog", label: "Blog" },
+            { href: "#contacto", label: "Contacto" },
+          ]}
+        />
       </header>
 
       <section className="healthHero">
