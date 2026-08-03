@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { enviarExpediente } from "../services/expedienteService";
+import { registrarEventoMetaPixel } from "../utils/metaPixel";
 import SuccessModal from "./SuccessModal";
 import "./LeadForm.css";
 
@@ -57,6 +58,8 @@ function LeadForm({
 
     if (resultado.ok) {
       form.reset();
+
+      registrarEventoMetaPixel("Lead", { seguro: datos.seguro, pagina });
 
       if (ventana && construirUrlVentana) {
         ventana.location.href = construirUrlVentana(resultado.expediente);

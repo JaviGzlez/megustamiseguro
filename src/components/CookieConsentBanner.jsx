@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { cargarGoogleAnalytics } from "../utils/googleAnalytics";
+import { cargarMetaPixel } from "../utils/metaPixel";
 import "./CookieConsentBanner.css";
 
 const CLAVE_STORAGE = "cookieConsent"; // "accepted" | "rejected"
@@ -12,6 +13,7 @@ function CookieConsentBanner() {
 
     if (decision === "accepted") {
       cargarGoogleAnalytics();
+      cargarMetaPixel();
     } else if (decision !== "rejected") {
       // Todavía no ha decidido nada -> mostramos el banner
       setVisible(true);
@@ -21,6 +23,7 @@ function CookieConsentBanner() {
   const aceptar = () => {
     localStorage.setItem(CLAVE_STORAGE, "accepted");
     cargarGoogleAnalytics();
+    cargarMetaPixel();
     setVisible(false);
   };
 
