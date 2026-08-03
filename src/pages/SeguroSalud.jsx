@@ -56,6 +56,16 @@ function SeguroSalud() {
             answer:
               "La cobertura médica varía según la compañía y la modalidad contratada, pero suele incluir medicina general, atención de especialistas, pruebas diagnósticas y, en muchos casos, urgencias y hospitalización.",
           },
+          {
+            question: "¿Existen planes médicos familiares económicos?",
+            answer:
+              "Sí. Muchas aseguradoras ofrecen descuentos al incluir a varios miembros de la familia en la misma póliza. El precio final depende del número de asegurados, sus edades y el nivel de cobertura elegido.",
+          },
+          {
+            question: "¿Se puede pagar un seguro médico de forma mensual?",
+            answer:
+              "Sí, la mayoría de seguros médicos y de salud permiten el pago mensual además del anual, normalmente con un pequeño recargo respecto al pago anual.",
+          },
         ]}
       />
 
@@ -401,6 +411,28 @@ function SeguroSalud() {
                 especialistas, pruebas diagnósticas y, en muchos casos,
                 urgencias y hospitalización. Te ayudamos a comparar la
                 cobertura médica real de cada opción antes de que decidas.
+              </p>
+            </div>
+
+            <div className="healthFaqItem">
+              <h3>¿Existen planes médicos familiares económicos?</h3>
+              <p>
+                Sí. Muchas aseguradoras ofrecen descuentos al incluir a
+                varios miembros de la familia en la misma póliza. El precio
+                final depende del número de asegurados, sus edades y el
+                nivel de cobertura elegido, así que comparar varias opciones
+                es la mejor forma de encontrar un seguro médico familiar
+                ajustado a tu presupuesto.
+              </p>
+            </div>
+
+            <div className="healthFaqItem">
+              <h3>¿Se puede pagar un seguro médico de forma mensual?</h3>
+              <p>
+                Sí, la mayoría de seguros médicos y de salud permiten el pago
+                mensual además del anual. El pago mensual suele tener un
+                pequeño recargo respecto al anual, pero facilita ajustar el
+                gasto a tu presupuesto.
               </p>
             </div>
           </div>

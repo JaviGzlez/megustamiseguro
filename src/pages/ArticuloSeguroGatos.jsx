@@ -1,5 +1,6 @@
 import "./Blog.css";
 import { Helmet } from "react-helmet-async";
+import FaqSchema from "../components/FaqSchema";
 
 function ArticuloSeguroGatos() {
   return (
@@ -25,6 +26,21 @@ function ArticuloSeguroGatos() {
         <meta name="twitter:description" content="¿Buscas un seguro para tu gato? Te contamos qué cubre, cuánto cuesta y cómo elegir la mejor póliza de seguro de mascotas para gatos." />
         <meta name="twitter:image" content="https://megustamiseguro.es/og-image.jpg" />
       </Helmet>
+      <FaqSchema
+        items={[
+          {
+            question: "¿Es necesario un seguro de salud para el gato?",
+            answer:
+              "No es obligatorio, pero sí muy recomendable. Los gatos también sufren enfermedades renales, dentales o digestivas que pueden requerir tratamientos costosos, y un seguro evita que ese gasto recaiga de golpe sobre ti.",
+          },
+          {
+            question: "¿Qué diferencia hay entre un seguro de gatos y uno de mascotas general?",
+            answer:
+              "Un seguro de mascotas puede cubrir distintos animales, pero las condiciones (carencias, enfermedades cubiertas, límites de edad) suelen adaptarse según la especie, por lo que conviene revisar que la póliza esté pensada para gatos.",
+          },
+        ]}
+      />
+
       <header className="blogHeader">
         <a href="/">
           <img
@@ -114,6 +130,26 @@ function ArticuloSeguroGatos() {
           Un seguro más económico puede tener límites de cobertura más bajos
           o excluir tratamientos importantes. Lo relevante es entender qué
           protección tendrá tu gato cuando realmente la necesite.
+        </p>
+
+        <h2>Preguntas frecuentes</h2>
+
+        <p>
+          <strong>¿Es necesario un seguro de salud para el gato?</strong>
+          <br />
+          No es obligatorio, pero sí muy recomendable. Los gatos también
+          sufren enfermedades renales, dentales o digestivas que pueden
+          requerir tratamientos costosos, y un seguro evita que ese gasto
+          recaiga de golpe sobre ti cuando menos lo esperas.
+        </p>
+
+        <p>
+          <strong>¿Qué diferencia hay entre un seguro de gatos y uno de mascotas general?</strong>
+          <br />
+          Un seguro de mascotas puede cubrir distintos animales, pero las
+          condiciones (carencias, enfermedades cubiertas, límites de edad)
+          suelen adaptarse según la especie. Por eso conviene revisar que la
+          póliza esté realmente pensada para gatos.
         </p>
 
         <h2>Conclusión</h2>
