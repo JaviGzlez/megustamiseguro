@@ -43,6 +43,11 @@ function Blog() {
       text: "Responsabilidad civil, accidentes, comercio, salud y protección profesional.",
       url: "/blog/seguros-para-autonomos",
     },
+    {
+      title: "Seguro de transporte y mercancía: todo lo que necesitas saber",
+      text: "RC del transportista, mercancías en tránsito, flotas y transporte internacional.",
+      url: "/blog/seguro-transporte-mercancia-todo-lo-que-necesitas-saber",
+    },
   ];
 
   return (

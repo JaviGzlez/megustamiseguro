@@ -22,6 +22,7 @@ import ArticuloSeguroVida from "./pages/ArticuloSeguroVida";
 import ArticuloSeguroMascotas from "./pages/ArticuloSeguroMascotas";
 import ArticuloSeguroGatos from "./pages/ArticuloSeguroGatos";
 import ArticuloAutonomos from "./pages/ArticuloAutonomos";
+import ArticuloSeguroTransporte from "./pages/ArticuloSeguroTransporte";
 import AvisoLegal from "./pages/AvisoLegal";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 import PoliticaCookies from "./pages/PoliticaCookies";
@@ -86,6 +87,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route
            path="/blog/seguros-para-autonomos"
            element={<ArticuloAutonomos />}
+        />
+        <Route
+           path="/blog/seguro-transporte-mercancia-todo-lo-que-necesitas-saber"
+           element={<ArticuloSeguroTransporte />}
         />
 
         <Route path="/aviso-legal" element={<AvisoLegal />} />

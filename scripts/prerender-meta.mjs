@@ -148,6 +148,12 @@ const ROUTES = [
     description:
       "Responsabilidad civil, accidentes, comercio, salud y protección profesional para autónomos.",
   },
+  {
+    path: "/blog/seguro-transporte-mercancia-todo-lo-que-necesitas-saber",
+    title: "Seguro de transporte y mercancía: todo lo que necesitas saber | Me Gusta Mi Seguro",
+    description:
+      "Responsabilidad civil del transportista, mercancías en tránsito, flotas y transporte internacional. Te contamos qué cubre cada modalidad y cuál necesitas.",
+  },
 ];
 
 function buildHtml(template, route) {
