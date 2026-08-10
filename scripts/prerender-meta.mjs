@@ -160,6 +160,12 @@ const ROUTES = [
     description:
       "Cómo elegir un seguro médico familiar económico, qué influye en el precio y cómo ahorrar al incluir a toda la familia en la misma póliza.",
   },
+  {
+    path: "/blog/cuanto-cuesta-seguro-coche-conductores-noveles",
+    title: "Cuánto cuesta un seguro de coche para conductores noveles | Me Gusta Mi Seguro",
+    description:
+      "Por qué el seguro de coche es más caro para conductores noveles, qué factores influyen en el precio y cómo puedes conseguirlo más barato.",
+  },
 ];
 
 function buildHtml(template, route) {

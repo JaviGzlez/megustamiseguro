@@ -53,6 +53,11 @@ function Blog() {
       text: "Qué influye en el precio, cómo ahorrar y qué revisar antes de contratar.",
       url: "/blog/seguro-medico-familiar-como-elegir-el-mejor-plan",
     },
+    {
+      title: "Cuánto cuesta un seguro de coche para conductores noveles",
+      text: "Por qué es más caro al principio y cómo conseguirlo más ajustado.",
+      url: "/blog/cuanto-cuesta-seguro-coche-conductores-noveles",
+    },
   ];
 
   return (
