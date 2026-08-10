@@ -154,6 +154,12 @@ const ROUTES = [
     description:
       "Responsabilidad civil del transportista, mercancías en tránsito, flotas y transporte internacional. Te contamos qué cubre cada modalidad y cuál necesitas.",
   },
+  {
+    path: "/blog/seguro-medico-familiar-como-elegir-el-mejor-plan",
+    title: "Seguro médico familiar: cómo elegir el mejor plan | Me Gusta Mi Seguro",
+    description:
+      "Cómo elegir un seguro médico familiar económico, qué influye en el precio y cómo ahorrar al incluir a toda la familia en la misma póliza.",
+  },
 ];
 
 function buildHtml(template, route) {

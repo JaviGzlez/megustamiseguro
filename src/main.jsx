@@ -23,6 +23,7 @@ import ArticuloSeguroMascotas from "./pages/ArticuloSeguroMascotas";
 import ArticuloSeguroGatos from "./pages/ArticuloSeguroGatos";
 import ArticuloAutonomos from "./pages/ArticuloAutonomos";
 import ArticuloSeguroTransporte from "./pages/ArticuloSeguroTransporte";
+import ArticuloSeguroMedicoFamiliar from "./pages/ArticuloSeguroMedicoFamiliar";
 import AvisoLegal from "./pages/AvisoLegal";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 import PoliticaCookies from "./pages/PoliticaCookies";
@@ -91,6 +92,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route
            path="/blog/seguro-transporte-mercancia-todo-lo-que-necesitas-saber"
            element={<ArticuloSeguroTransporte />}
+        />
+        <Route
+           path="/blog/seguro-medico-familiar-como-elegir-el-mejor-plan"
+           element={<ArticuloSeguroMedicoFamiliar />}
         />
 
         <Route path="/aviso-legal" element={<AvisoLegal />} />

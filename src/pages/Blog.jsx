@@ -48,6 +48,11 @@ function Blog() {
       text: "RC del transportista, mercancías en tránsito, flotas y transporte internacional.",
       url: "/blog/seguro-transporte-mercancia-todo-lo-que-necesitas-saber",
     },
+    {
+      title: "Seguro médico familiar: cómo elegir el mejor plan",
+      text: "Qué influye en el precio, cómo ahorrar y qué revisar antes de contratar.",
+      url: "/blog/seguro-medico-familiar-como-elegir-el-mejor-plan",
+    },
   ];
 
   return (
