@@ -58,6 +58,11 @@ function Blog() {
       text: "Por qué es más caro al principio y cómo conseguirlo más ajustado.",
       url: "/blog/cuanto-cuesta-seguro-coche-conductores-noveles",
     },
+    {
+      title: "Seguro de hogar en alquiler: ¿inquilino o propietario?",
+      text: "Quién debe asegurar qué en una vivienda de alquiler.",
+      url: "/blog/seguro-hogar-alquiler-inquilino-o-propietario",
+    },
   ];
 
   return (

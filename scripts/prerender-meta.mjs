@@ -166,6 +166,12 @@ const ROUTES = [
     description:
       "Por qué el seguro de coche es más caro para conductores noveles, qué factores influyen en el precio y cómo puedes conseguirlo más barato.",
   },
+  {
+    path: "/blog/seguro-hogar-alquiler-inquilino-o-propietario",
+    title: "Seguro de hogar en alquiler: ¿lo necesita el inquilino o el propietario? | Me Gusta Mi Seguro",
+    description:
+      "Quién debe contratar el seguro de hogar en una vivienda de alquiler, qué cubre cada modalidad y por qué al inquilino también le conviene tener uno.",
+  },
 ];
 
 function buildHtml(template, route) {

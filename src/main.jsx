@@ -25,6 +25,7 @@ import ArticuloAutonomos from "./pages/ArticuloAutonomos";
 import ArticuloSeguroTransporte from "./pages/ArticuloSeguroTransporte";
 import ArticuloSeguroMedicoFamiliar from "./pages/ArticuloSeguroMedicoFamiliar";
 import ArticuloSeguroCocheNoveles from "./pages/ArticuloSeguroCocheNoveles";
+import ArticuloSeguroHogarAlquiler from "./pages/ArticuloSeguroHogarAlquiler";
 import AvisoLegal from "./pages/AvisoLegal";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 import PoliticaCookies from "./pages/PoliticaCookies";
@@ -101,6 +102,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route
            path="/blog/cuanto-cuesta-seguro-coche-conductores-noveles"
            element={<ArticuloSeguroCocheNoveles />}
+        />
+        <Route
+           path="/blog/seguro-hogar-alquiler-inquilino-o-propietario"
+           element={<ArticuloSeguroHogarAlquiler />}
         />
 
         <Route path="/aviso-legal" element={<AvisoLegal />} />
