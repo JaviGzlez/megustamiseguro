@@ -119,6 +119,13 @@ function ArticuloSeguroMascotas() {
         </p>
 
         <p>
+          Si tu mascota es un gato, tenemos una guía específica:{" "}
+          <a href="/blog/seguro-para-gatos-que-debes-tener-en-cuenta">
+            seguro para gatos: qué debes tener en cuenta
+          </a>.
+        </p>
+
+        <p>
           ¿Quieres ver todas las coberturas disponibles? Visita nuestra
           página de <a href="/seguro-mascotas">Seguro de Mascotas</a>.
         </p>

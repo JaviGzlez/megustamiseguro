@@ -151,6 +151,13 @@ function ArticuloSeguroMedicoFamiliar() {
         </p>
 
         <p>
+          Si todavía dudas entre modalidades, lee también{" "}
+          <a href="/blog/seguro-salud-con-copago-o-sin-copago">
+            seguro de salud con copago o sin copago
+          </a>.
+        </p>
+
+        <p>
           ¿Quieres ver todas las opciones disponibles? Visita nuestra
           página de <a href="/seguro-salud">Seguro de Salud</a>.
         </p>

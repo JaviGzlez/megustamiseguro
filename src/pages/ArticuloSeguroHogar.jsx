@@ -118,6 +118,13 @@ function ArticuloSeguroHogar() {
         </p>
 
         <p>
+          Si vives de alquiler, te interesa saber{" "}
+          <a href="/blog/seguro-hogar-alquiler-inquilino-o-propietario">
+            quién debe contratar el seguro, el inquilino o el propietario
+          </a>.
+        </p>
+
+        <p>
           ¿Quieres ver todas las coberturas disponibles? Visita nuestra
           página de <a href="/seguro-hogar">Seguro de Hogar</a>.
         </p>

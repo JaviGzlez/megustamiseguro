@@ -110,6 +110,13 @@ function ArticuloSeguroVida() {
         </p>
 
         <p>
+          Si tienes hipoteca, te interesa especialmente{" "}
+          <a href="/blog/cuanto-seguro-de-vida-necesito-con-hipoteca">
+            cuánto seguro de vida necesito si tengo hipoteca
+          </a>.
+        </p>
+
+        <p>
           ¿Quieres ver todas las coberturas disponibles? Visita nuestra
           página de <a href="/seguro-vida">Seguro de Vida</a>.
         </p>

@@ -148,6 +148,17 @@ function ArticuloSeguroCocheNoveles() {
         </p>
 
         <p>
+          Te puede interesar también{" "}
+          <a href="/blog/como-elegir-seguro-coche-2026">
+            cómo elegir un seguro de coche en 2026
+          </a>{" "}
+          y{" "}
+          <a href="/blog/seguro-coche-todo-riesgo-vs-terceros">
+            todo riesgo vs terceros: ¿cuál te conviene?
+          </a>.
+        </p>
+
+        <p>
           ¿Quieres comparar opciones para tu caso? Visita nuestra
           página de <a href="/seguro-coche">Seguro de Coche</a>.
         </p>

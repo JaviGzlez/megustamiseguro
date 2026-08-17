@@ -118,6 +118,14 @@ function ArticuloAutonomos() {
         </p>
 
         <p>
+          Si tu actividad incluye reparto o transporte de mercancía, revisa
+          también{" "}
+          <a href="/blog/seguro-transporte-mercancia-todo-lo-que-necesitas-saber">
+            seguro de transporte y mercancía: todo lo que necesitas saber
+          </a>.
+        </p>
+
+        <p>
           ¿Quieres ver todas las coberturas disponibles? Visita nuestra
           página de <a href="/empresas-autonomos">Empresas y Autónomos</a>.
         </p>

@@ -171,6 +171,14 @@ function ArticuloSeguroTransporte() {
         </p>
 
         <p>
+          Si eres autónomo y quieres proteger también tu actividad
+          profesional en general, lee{" "}
+          <a href="/blog/seguros-para-autonomos">
+            seguros para autónomos: trabajar con más tranquilidad
+          </a>.
+        </p>
+
+        <p>
           ¿Quieres ver todas las coberturas disponibles? Visita nuestra
           página de{" "}
           <a href="/transporte-mercancia">Seguro de Transporte y Mercancía</a>.

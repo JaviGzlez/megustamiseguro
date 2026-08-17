@@ -117,6 +117,16 @@ function ArticuloSeguroCoche() {
         </p>
 
         <p>
+          Si dudas entre modalidades, te puede interesar{" "}
+          <a href="/blog/seguro-coche-todo-riesgo-vs-terceros">
+            todo riesgo vs terceros: ¿cuál te conviene?
+          </a>, o si acabas de sacarte el carné,{" "}
+          <a href="/blog/cuanto-cuesta-seguro-coche-conductores-noveles">
+            cuánto cuesta un seguro para conductores noveles
+          </a>.
+        </p>
+
+        <p>
           ¿Quieres ver todas las coberturas disponibles? Visita nuestra
           página de <a href="/seguro-coche">Seguro de Coche</a>.
         </p>

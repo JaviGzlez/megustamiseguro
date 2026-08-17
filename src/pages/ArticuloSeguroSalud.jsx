@@ -106,6 +106,13 @@ function ArticuloSeguroSalud() {
         </p>
 
         <p>
+          Si buscas un seguro para toda la familia, te interesa{" "}
+          <a href="/blog/seguro-medico-familiar-como-elegir-el-mejor-plan">
+            seguro médico familiar: cómo elegir el mejor plan
+          </a>.
+        </p>
+
+        <p>
           ¿Quieres ver todas las coberturas disponibles? Visita nuestra
           página de <a href="/seguro-salud">Seguro de Salud</a>.
         </p>

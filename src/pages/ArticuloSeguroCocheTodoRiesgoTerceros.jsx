@@ -129,6 +129,16 @@ function ArticuloSeguroCocheTodoRiesgoTerceros() {
         </p>
 
         <p>
+          Si todavía no sabes por dónde empezar, revisa primero{" "}
+          <a href="/blog/como-elegir-seguro-coche-2026">
+            cómo elegir un seguro de coche en 2026
+          </a>, o si eres conductor novel,{" "}
+          <a href="/blog/cuanto-cuesta-seguro-coche-conductores-noveles">
+            cuánto te va a costar el seguro al principio
+          </a>.
+        </p>
+
+        <p>
           ¿Quieres que comparemos las opciones para tu caso concreto? Visita
           nuestra página de <a href="/seguro-coche">Seguro de Coche</a>.
         </p>

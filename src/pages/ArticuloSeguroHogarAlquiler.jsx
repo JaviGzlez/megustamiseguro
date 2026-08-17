@@ -148,6 +148,13 @@ function ArticuloSeguroHogarAlquiler() {
         </p>
 
         <p>
+          Para conocer todas las coberturas habituales de una vivienda, lee{" "}
+          <a href="/blog/que-cubre-realmente-un-seguro-de-hogar">
+            qué cubre realmente un seguro de hogar
+          </a>.
+        </p>
+
+        <p>
           ¿Quieres ver todas las opciones disponibles? Visita nuestra
           página de <a href="/seguro-hogar">Seguro de Hogar</a>.
         </p>

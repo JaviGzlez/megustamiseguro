@@ -161,6 +161,13 @@ function ArticuloSeguroGatos() {
         </p>
 
         <p>
+          Si además tienes perro, échale un vistazo a{" "}
+          <a href="/blog/seguro-para-perros-que-debes-tener-en-cuenta">
+            seguro para perros: qué debes tener en cuenta
+          </a>.
+        </p>
+
+        <p>
           ¿Quieres ver todas las coberturas disponibles? Visita nuestra
           página de <a href="/seguro-mascotas">Seguro de Mascotas</a>.
         </p>

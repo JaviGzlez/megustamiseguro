@@ -152,6 +152,13 @@ function ArticuloSeguroVidaHipoteca() {
         </p>
 
         <p>
+          Si quieres una visión más general antes de decidir, lee{" "}
+          <a href="/blog/merece-la-pena-contratar-un-seguro-de-vida">
+            ¿merece la pena contratar un seguro de vida?
+          </a>.
+        </p>
+
+        <p>
           ¿Quieres ver todas las opciones disponibles? Visita nuestra
           página de <a href="/seguro-vida">Seguro de Vida</a>.
         </p>
