@@ -172,6 +172,12 @@ const ROUTES = [
     description:
       "Quién debe contratar el seguro de hogar en una vivienda de alquiler, qué cubre cada modalidad y por qué al inquilino también le conviene tener uno.",
   },
+  {
+    path: "/blog/cuanto-seguro-de-vida-necesito-con-hipoteca",
+    title: "¿Cuánto seguro de vida necesito si tengo hipoteca? | Me Gusta Mi Seguro",
+    description:
+      "Cómo calcular el capital de un seguro de vida vinculado a la hipoteca, diferencias entre seguro decreciente y constante, y si conviene el del banco o uno propio.",
+  },
 ];
 
 function buildHtml(template, route) {

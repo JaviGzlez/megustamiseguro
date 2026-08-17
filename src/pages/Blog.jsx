@@ -63,6 +63,11 @@ function Blog() {
       text: "Quién debe asegurar qué en una vivienda de alquiler.",
       url: "/blog/seguro-hogar-alquiler-inquilino-o-propietario",
     },
+    {
+      title: "¿Cuánto seguro de vida necesito si tengo hipoteca?",
+      text: "Cómo calcular el capital adecuado y qué modalidad conviene.",
+      url: "/blog/cuanto-seguro-de-vida-necesito-con-hipoteca",
+    },
   ];
 
   return (
