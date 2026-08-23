@@ -28,6 +28,7 @@ import ArticuloSeguroCocheNoveles from "./pages/ArticuloSeguroCocheNoveles";
 import ArticuloSeguroHogarAlquiler from "./pages/ArticuloSeguroHogarAlquiler";
 import ArticuloSeguroVidaHipoteca from "./pages/ArticuloSeguroVidaHipoteca";
 import ArticuloCambiarDeSeguroPlazos from "./pages/ArticuloCambiarDeSeguroPlazos";
+import ArticuloSeguroHogarFugaAgua from "./pages/ArticuloSeguroHogarFugaAgua";
 import AvisoLegal from "./pages/AvisoLegal";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 import PoliticaCookies from "./pages/PoliticaCookies";
@@ -116,6 +117,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route
            path="/blog/cuanta-antelacion-cambiar-de-seguro"
            element={<ArticuloCambiarDeSeguroPlazos />}
+        />
+        <Route
+           path="/blog/seguro-hogar-cubre-fuga-de-agua"
+           element={<ArticuloSeguroHogarFugaAgua />}
         />
 
         <Route path="/aviso-legal" element={<AvisoLegal />} />

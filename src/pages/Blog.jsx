@@ -73,6 +73,11 @@ function Blog() {
       text: "Plazos legales y pasos para hacerlo sin quedarte sin cobertura.",
       url: "/blog/cuanta-antelacion-cambiar-de-seguro",
     },
+    {
+      title: "¿Tu seguro de hogar cubre una fuga de agua?",
+      text: "Daños por agua, localización de la avería, vecinos y responsabilidad civil.",
+      url: "/blog/seguro-hogar-cubre-fuga-de-agua",
+    },
   ];
 
   return (

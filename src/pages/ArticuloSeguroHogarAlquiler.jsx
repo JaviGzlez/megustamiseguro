@@ -151,6 +151,9 @@ function ArticuloSeguroHogarAlquiler() {
           Para conocer todas las coberturas habituales de una vivienda, lee{" "}
           <a href="/blog/que-cubre-realmente-un-seguro-de-hogar">
             qué cubre realmente un seguro de hogar
+          </a>, y si te preocupan los daños por agua en concreto,{" "}
+          <a href="/blog/seguro-hogar-cubre-fuga-de-agua">
+            si tu seguro cubre una fuga de agua
           </a>.
         </p>
 

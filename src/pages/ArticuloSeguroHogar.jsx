@@ -121,6 +121,9 @@ function ArticuloSeguroHogar() {
           Si vives de alquiler, te interesa saber{" "}
           <a href="/blog/seguro-hogar-alquiler-inquilino-o-propietario">
             quién debe contratar el seguro, el inquilino o el propietario
+          </a>. Y si te preocupan concretamente los daños por agua, lee{" "}
+          <a href="/blog/seguro-hogar-cubre-fuga-de-agua">
+            si tu seguro de hogar cubre una fuga de agua
           </a>.
         </p>
 

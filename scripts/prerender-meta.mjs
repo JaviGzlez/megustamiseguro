@@ -184,6 +184,12 @@ const ROUTES = [
     description:
       "El plazo legal para oponerte a la renovación de tu seguro, cómo comunicarlo correctamente y los pasos para cambiar de compañía sin quedarte sin cobertura.",
   },
+  {
+    path: "/blog/seguro-hogar-cubre-fuga-de-agua",
+    title: "¿Tu seguro de hogar cubre una fuga de agua? Qué deberías revisar | Me Gusta Mi Seguro",
+    description:
+      "Daños por agua, localización y reparación de la avería, daños a vecinos y responsabilidad civil: qué debería incluir tu seguro de hogar ante una fuga de agua.",
+  },
 ];
 
 function buildHtml(template, route) {
