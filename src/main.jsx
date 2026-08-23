@@ -27,6 +27,7 @@ import ArticuloSeguroMedicoFamiliar from "./pages/ArticuloSeguroMedicoFamiliar";
 import ArticuloSeguroCocheNoveles from "./pages/ArticuloSeguroCocheNoveles";
 import ArticuloSeguroHogarAlquiler from "./pages/ArticuloSeguroHogarAlquiler";
 import ArticuloSeguroVidaHipoteca from "./pages/ArticuloSeguroVidaHipoteca";
+import ArticuloCambiarDeSeguroPlazos from "./pages/ArticuloCambiarDeSeguroPlazos";
 import AvisoLegal from "./pages/AvisoLegal";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 import PoliticaCookies from "./pages/PoliticaCookies";
@@ -111,6 +112,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route
            path="/blog/cuanto-seguro-de-vida-necesito-con-hipoteca"
            element={<ArticuloSeguroVidaHipoteca />}
+        />
+        <Route
+           path="/blog/cuanta-antelacion-cambiar-de-seguro"
+           element={<ArticuloCambiarDeSeguroPlazos />}
         />
 
         <Route path="/aviso-legal" element={<AvisoLegal />} />

@@ -68,6 +68,11 @@ function Blog() {
       text: "Cómo calcular el capital adecuado y qué modalidad conviene.",
       url: "/blog/cuanto-seguro-de-vida-necesito-con-hipoteca",
     },
+    {
+      title: "¿Con cuánta antelación puedo cambiar de seguro?",
+      text: "Plazos legales y pasos para hacerlo sin quedarte sin cobertura.",
+      url: "/blog/cuanta-antelacion-cambiar-de-seguro",
+    },
   ];
 
   return (

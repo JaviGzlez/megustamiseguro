@@ -178,6 +178,12 @@ const ROUTES = [
     description:
       "Cómo calcular el capital de un seguro de vida vinculado a la hipoteca, diferencias entre seguro decreciente y constante, y si conviene el del banco o uno propio.",
   },
+  {
+    path: "/blog/cuanta-antelacion-cambiar-de-seguro",
+    title: "¿Con cuánta antelación puedo cambiar de seguro? Plazos y pasos | Me Gusta Mi Seguro",
+    description:
+      "El plazo legal para oponerte a la renovación de tu seguro, cómo comunicarlo correctamente y los pasos para cambiar de compañía sin quedarte sin cobertura.",
+  },
 ];
 
 function buildHtml(template, route) {
