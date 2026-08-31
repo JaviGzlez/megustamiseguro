@@ -29,6 +29,7 @@ import ArticuloSeguroHogarAlquiler from "./pages/ArticuloSeguroHogarAlquiler";
 import ArticuloSeguroVidaHipoteca from "./pages/ArticuloSeguroVidaHipoteca";
 import ArticuloCambiarDeSeguroPlazos from "./pages/ArticuloCambiarDeSeguroPlazos";
 import ArticuloSeguroHogarFugaAgua from "./pages/ArticuloSeguroHogarFugaAgua";
+import ArticuloSeguroSubidaPrecioSinPartes from "./pages/ArticuloSeguroSubidaPrecioSinPartes";
 import AvisoLegal from "./pages/AvisoLegal";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 import PoliticaCookies from "./pages/PoliticaCookies";
@@ -121,6 +122,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route
            path="/blog/seguro-hogar-cubre-fuga-de-agua"
            element={<ArticuloSeguroHogarFugaAgua />}
+        />
+        <Route
+           path="/blog/por-que-ha-subido-mi-seguro-sin-dar-partes"
+           element={<ArticuloSeguroSubidaPrecioSinPartes />}
         />
 
         <Route path="/aviso-legal" element={<AvisoLegal />} />

@@ -158,6 +158,13 @@ function ArticuloCambiarDeSeguroPlazos() {
         </p>
 
         <p>
+          Si el motivo de tu cambio es una subida de precio, lee también{" "}
+          <a href="/blog/por-que-ha-subido-mi-seguro-sin-dar-partes">
+            ¿por qué ha subido mi seguro si no he dado partes?
+          </a>.
+        </p>
+
+        <p>
           ¿Quieres comparar opciones antes de que llegue tu renovación?
           Visita nuestra página de <a href="/#seguros">Seguros</a>.
         </p>

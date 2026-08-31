@@ -190,6 +190,12 @@ const ROUTES = [
     description:
       "Daños por agua, localización y reparación de la avería, daños a vecinos y responsabilidad civil: qué debería incluir tu seguro de hogar ante una fuga de agua.",
   },
+  {
+    path: "/blog/por-que-ha-subido-mi-seguro-sin-dar-partes",
+    title: "¿Por qué ha subido mi seguro si no he dado partes? | Me Gusta Mi Seguro",
+    description:
+      "Tu seguro sube aunque no hayas dado ningún parte. Te explicamos los motivos más habituales y qué puedes hacer al respecto.",
+  },
 ];
 
 function buildHtml(template, route) {

@@ -78,6 +78,11 @@ function Blog() {
       text: "Daños por agua, localización de la avería, vecinos y responsabilidad civil.",
       url: "/blog/seguro-hogar-cubre-fuga-de-agua",
     },
+    {
+      title: "¿Por qué ha subido mi seguro si no he dado partes?",
+      text: "Motivos habituales de subida de precio y qué puedes hacer.",
+      url: "/blog/por-que-ha-subido-mi-seguro-sin-dar-partes",
+    },
   ];
 
   return (
