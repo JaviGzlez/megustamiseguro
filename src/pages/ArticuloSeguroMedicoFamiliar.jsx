@@ -154,6 +154,9 @@ function ArticuloSeguroMedicoFamiliar() {
           Si todavía dudas entre modalidades, lee también{" "}
           <a href="/blog/seguro-salud-con-copago-o-sin-copago">
             seguro de salud con copago o sin copago
+          </a>, y antes de firmar, revisa{" "}
+          <a href="/blog/carencias-seguro-medico-que-son-cuanto-duran">
+            qué son las carencias y cuánto duran
           </a>.
         </p>
 

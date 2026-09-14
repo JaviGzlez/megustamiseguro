@@ -29,6 +29,9 @@ import ArticuloSeguroHogarAlquiler from "./pages/ArticuloSeguroHogarAlquiler";
 import ArticuloSeguroVidaHipoteca from "./pages/ArticuloSeguroVidaHipoteca";
 import ArticuloCambiarDeSeguroPlazos from "./pages/ArticuloCambiarDeSeguroPlazos";
 import ArticuloSeguroHogarFugaAgua from "./pages/ArticuloSeguroHogarFugaAgua";
+import ArticuloCancelarSeguroAntesRenovacion from "./pages/ArticuloCancelarSeguroAntesRenovacion";
+import ArticuloDevolverReciboSeguro from "./pages/ArticuloDevolverReciboSeguro";
+import ArticuloCarenciasSeguroMedico from "./pages/ArticuloCarenciasSeguroMedico";
 import ArticuloSeguroSubidaPrecioSinPartes from "./pages/ArticuloSeguroSubidaPrecioSinPartes";
 import AvisoLegal from "./pages/AvisoLegal";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
@@ -122,6 +125,18 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route
            path="/blog/seguro-hogar-cubre-fuga-de-agua"
            element={<ArticuloSeguroHogarFugaAgua />}
+        />
+        <Route
+           path="/blog/como-cancelar-seguro-antes-de-su-renovacion"
+           element={<ArticuloCancelarSeguroAntesRenovacion />}
+        />
+        <Route
+           path="/blog/que-pasa-si-devuelvo-el-recibo-del-seguro"
+           element={<ArticuloDevolverReciboSeguro />}
+        />
+        <Route
+           path="/blog/carencias-seguro-medico-que-son-cuanto-duran"
+           element={<ArticuloCarenciasSeguroMedico />}
         />
         <Route
            path="/blog/por-que-ha-subido-mi-seguro-sin-dar-partes"

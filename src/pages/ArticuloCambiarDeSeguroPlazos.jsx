@@ -161,7 +161,16 @@ function ArticuloCambiarDeSeguroPlazos() {
           Si el motivo de tu cambio es una subida de precio, lee también{" "}
           <a href="/blog/por-que-ha-subido-mi-seguro-sin-dar-partes">
             ¿por qué ha subido mi seguro si no he dado partes?
-          </a>.
+          </a>. Y si lo que necesitas es cancelar antes de tiempo por otro
+          motivo, o quieres saber por qué no basta con devolver el recibo,
+          revisa{" "}
+          <a href="/blog/como-cancelar-seguro-antes-de-su-renovacion">
+            cómo cancelar un seguro antes de su renovación
+          </a>{" "}
+          y{" "}
+          <a href="/blog/que-pasa-si-devuelvo-el-recibo-del-seguro">
+            ¿qué pasa si devuelvo el recibo del seguro?
+          </a>
         </p>
 
         <p>

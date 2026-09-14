@@ -79,6 +79,21 @@ function Blog() {
       url: "/blog/seguro-hogar-cubre-fuga-de-agua",
     },
     {
+      title: "Cómo cancelar un seguro antes de su renovación",
+      text: "Cuándo puedes cancelar antes de tiempo y cómo hacerlo bien.",
+      url: "/blog/como-cancelar-seguro-antes-de-su-renovacion",
+    },
+    {
+      title: "¿Qué pasa si devuelvo el recibo del seguro?",
+      text: "No cancela tu seguro: qué dice la ley y qué riesgos tiene.",
+      url: "/blog/que-pasa-si-devuelvo-el-recibo-del-seguro",
+    },
+    {
+      title: "Carencias de un seguro médico: qué son y cuánto duran",
+      text: "Cuánto tardan en activarse las coberturas según el tipo.",
+      url: "/blog/carencias-seguro-medico-que-son-cuanto-duran",
+    },
+    {
       title: "¿Por qué ha subido mi seguro si no he dado partes?",
       text: "Motivos habituales de subida de precio y qué puedes hacer.",
       url: "/blog/por-que-ha-subido-mi-seguro-sin-dar-partes",

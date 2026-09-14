@@ -196,6 +196,24 @@ const ROUTES = [
     description:
       "Tu seguro sube aunque no hayas dado ningún parte. Te explicamos los motivos más habituales y qué puedes hacer al respecto.",
   },
+  {
+    path: "/blog/como-cancelar-seguro-antes-de-su-renovacion",
+    title: "Cómo cancelar un seguro antes de su renovación | Me Gusta Mi Seguro",
+    description:
+      "Cuándo puedes cancelar un seguro en mitad de la póliza, cuándo tienes que esperar a la renovación, y cómo hacerlo correctamente en cada caso.",
+  },
+  {
+    path: "/blog/que-pasa-si-devuelvo-el-recibo-del-seguro",
+    title: "¿Qué pasa si devuelvo el recibo del seguro? | Me Gusta Mi Seguro",
+    description:
+      "Devolver el recibo no cancela tu seguro. Te explicamos qué dice la ley, qué consecuencias tiene y cuál es la forma correcta de darte de baja.",
+  },
+  {
+    path: "/blog/carencias-seguro-medico-que-son-cuanto-duran",
+    title: "Carencias de un seguro médico: qué son y cuánto duran | Me Gusta Mi Seguro",
+    description:
+      "Qué es el periodo de carencia de un seguro de salud, cuánto dura según el tipo de cobertura y cómo puedes reducirlo o eliminarlo.",
+  },
 ];
 
 function buildHtml(template, route) {
