@@ -33,6 +33,9 @@ import ArticuloCancelarSeguroAntesRenovacion from "./pages/ArticuloCancelarSegur
 import ArticuloDevolverReciboSeguro from "./pages/ArticuloDevolverReciboSeguro";
 import ArticuloCarenciasSeguroMedico from "./pages/ArticuloCarenciasSeguroMedico";
 import ArticuloSeguroSubidaPrecioSinPartes from "./pages/ArticuloSeguroSubidaPrecioSinPartes";
+import ArticuloRCAutonomos from "./pages/ArticuloRCAutonomos";
+import ArticuloContinenteContenido from "./pages/ArticuloContinenteContenido";
+import ArticuloSegurosBarRestaurante from "./pages/ArticuloSegurosBarRestaurante";
 import AvisoLegal from "./pages/AvisoLegal";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 import PoliticaCookies from "./pages/PoliticaCookies";
@@ -141,6 +144,18 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route
            path="/blog/por-que-ha-subido-mi-seguro-sin-dar-partes"
            element={<ArticuloSeguroSubidaPrecioSinPartes />}
+        />
+        <Route
+           path="/blog/seguro-responsabilidad-civil-autonomos"
+           element={<ArticuloRCAutonomos />}
+        />
+        <Route
+           path="/blog/continente-y-contenido-diferencias-con-ejemplos"
+           element={<ArticuloContinenteContenido />}
+        />
+        <Route
+           path="/blog/que-seguros-necesita-un-bar-o-restaurante"
+           element={<ArticuloSegurosBarRestaurante />}
         />
 
         <Route path="/aviso-legal" element={<AvisoLegal />} />

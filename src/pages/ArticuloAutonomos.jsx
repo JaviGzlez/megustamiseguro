@@ -5,24 +5,24 @@ function ArticuloAutonomos() {
   return (
     <main className="blogPage">
       <Helmet>
-        <title>Seguros para autónomos: trabajar con más tranquilidad | Me Gusta Mi Seguro</title>
+        <title>Seguros para Autónomos 2026 | RC, Salud y Accidentes | Me Gusta Mi Seguro</title>
         <meta
           name="description"
-          content="Responsabilidad civil, accidentes, comercio, salud y protección profesional para autónomos."
+          content="Seguros pensados para autónomos: responsabilidad civil, accidentes, comercio y salud. Compara opciones y protege tu actividad, sin compromiso."
         />
               <link rel="canonical" href="https://megustamiseguro.es/blog/seguros-para-autonomos" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Seguros para autónomos: trabajar con más tranquilidad | Me Gusta Mi Seguro" />
-        <meta property="og:description" content="Responsabilidad civil, accidentes, comercio, salud y protección profesional para autónomos." />
+        <meta property="og:title" content="Seguros para Autónomos 2026 | RC, Salud y Accidentes | Me Gusta Mi Seguro" />
+        <meta property="og:description" content="Seguros pensados para autónomos: responsabilidad civil, accidentes, comercio y salud. Compara opciones y protege tu actividad, sin compromiso." />
         <meta property="og:url" content="https://megustamiseguro.es/blog/seguros-para-autonomos" />
         <meta property="og:image" content="https://megustamiseguro.es/og-image.jpg" />
         <meta property="og:locale" content="es_ES" />
         <meta property="og:site_name" content="Me Gusta Mi Seguro" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Seguros para autónomos: trabajar con más tranquilidad | Me Gusta Mi Seguro" />
-        <meta name="twitter:description" content="Responsabilidad civil, accidentes, comercio, salud y protección profesional para autónomos." />
+        <meta name="twitter:title" content="Seguros para Autónomos 2026 | RC, Salud y Accidentes | Me Gusta Mi Seguro" />
+        <meta name="twitter:description" content="Seguros pensados para autónomos: responsabilidad civil, accidentes, comercio y salud. Compara opciones y protege tu actividad, sin compromiso." />
         <meta name="twitter:image" content="https://megustamiseguro.es/og-image.jpg" />
       </Helmet>
       <header className="blogHeader">
@@ -122,7 +122,16 @@ function ArticuloAutonomos() {
           también{" "}
           <a href="/blog/seguro-transporte-mercancia-todo-lo-que-necesitas-saber">
             seguro de transporte y mercancía: todo lo que necesitas saber
-          </a>.
+          </a>. Para profundizar en la cobertura más importante para
+          cualquier autónomo, lee{" "}
+          <a href="/blog/seguro-responsabilidad-civil-autonomos">
+            seguro de responsabilidad civil para autónomos: qué cubre
+          </a>
+          , y si tienes un negocio de hostelería,{" "}
+          <a href="/blog/que-seguros-necesita-un-bar-o-restaurante">
+            qué seguros necesita un bar o restaurante
+          </a>
+          .
         </p>
 
         <p>

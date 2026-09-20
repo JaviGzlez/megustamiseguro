@@ -1,4 +1,16 @@
 {
+  "redirects": [
+    {
+      "source": "/blog/cuanta-antilacion-cambiar-de-seguro",
+      "destination": "/blog/cuanta-antelacion-cambiar-de-seguro",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cuna-antelacion-cambiar-de-seguro",
+      "destination": "/blog/cuanta-antelacion-cambiar-de-seguro",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]

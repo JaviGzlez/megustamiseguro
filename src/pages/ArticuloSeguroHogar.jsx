@@ -124,7 +124,12 @@ function ArticuloSeguroHogar() {
           </a>. Y si te preocupan concretamente los daños por agua, lee{" "}
           <a href="/blog/seguro-hogar-cubre-fuga-de-agua">
             si tu seguro de hogar cubre una fuga de agua
-          </a>.
+          </a>. Para entender bien qué partes de tu vivienda cubre cada
+          modalidad, lee también{" "}
+          <a href="/blog/continente-y-contenido-diferencias-con-ejemplos">
+            continente y contenido: diferencias con ejemplos
+          </a>
+          .
         </p>
 
         <p>

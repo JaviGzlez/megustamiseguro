@@ -10,24 +10,24 @@ function SeguroCoche() {
   return (
     <main className="carPage">
       <Helmet>
-        <title>Seguro de Coche | Compara y ahorra | Me Gusta Mi Seguro</title>
+        <title>Seguro de Coche Barato 2026 | Compara Gratis | Me Gusta Mi Seguro</title>
         <meta
           name="description"
-          content="Compara seguros de coche y encuentra la cobertura que mejor se adapta a ti. Asesoramiento personalizado y sin compromiso."
+          content="Compara tu seguro de coche en menos de 2 minutos y ahorra sin renunciar a coberturas. Asesoramiento personalizado, sin compromiso ni letra pequeña."
         />
               <link rel="canonical" href="https://megustamiseguro.es/seguro-coche" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Seguro de Coche | Compara y ahorra | Me Gusta Mi Seguro" />
-        <meta property="og:description" content="Compara seguros de coche y encuentra la cobertura que mejor se adapta a ti. Asesoramiento personalizado y sin compromiso." />
+        <meta property="og:title" content="Seguro de Coche Barato 2026 | Compara Gratis | Me Gusta Mi Seguro" />
+        <meta property="og:description" content="Compara tu seguro de coche en menos de 2 minutos y ahorra sin renunciar a coberturas. Asesoramiento personalizado, sin compromiso ni letra pequeña." />
         <meta property="og:url" content="https://megustamiseguro.es/seguro-coche" />
         <meta property="og:image" content="https://megustamiseguro.es/og-image.jpg" />
         <meta property="og:locale" content="es_ES" />
         <meta property="og:site_name" content="Me Gusta Mi Seguro" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Seguro de Coche | Compara y ahorra | Me Gusta Mi Seguro" />
-        <meta name="twitter:description" content="Compara seguros de coche y encuentra la cobertura que mejor se adapta a ti. Asesoramiento personalizado y sin compromiso." />
+        <meta name="twitter:title" content="Seguro de Coche Barato 2026 | Compara Gratis | Me Gusta Mi Seguro" />
+        <meta name="twitter:description" content="Compara tu seguro de coche en menos de 2 minutos y ahorra sin renunciar a coberturas. Asesoramiento personalizado, sin compromiso ni letra pequeña." />
         <meta name="twitter:image" content="https://megustamiseguro.es/og-image.jpg" />
       </Helmet>
 
