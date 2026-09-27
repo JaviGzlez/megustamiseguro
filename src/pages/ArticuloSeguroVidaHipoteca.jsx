@@ -159,6 +159,14 @@ function ArticuloSeguroVidaHipoteca() {
         </p>
 
         <p>
+          Y antes de firmar el que te ofrece el banco, revisa{" "}
+          <a href="/blog/seguro-de-vida-banco-o-independiente">
+            seguro de vida: ¿el del banco o uno independiente?
+          </a>{" "}
+          para conocer tu derecho a elegir aseguradora.
+        </p>
+
+        <p>
           ¿Quieres ver todas las opciones disponibles? Visita nuestra
           página de <a href="/seguro-vida">Seguro de Vida</a>.
         </p>

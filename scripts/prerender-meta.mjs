@@ -53,9 +53,9 @@ const DEFAULTS = {
 const ROUTES = [
   {
     path: "/seguro-coche",
-    title: "Seguro de Coche Barato 2026 | Compara Gratis | Me Gusta Mi Seguro",
+    title: "Seguro de Coche | Compara y ahorra | Me Gusta Mi Seguro",
     description:
-      "Compara tu seguro de coche en menos de 2 minutos y ahorra sin renunciar a coberturas. Asesoramiento personalizado, sin compromiso ni letra pequeña.",
+      "Compara seguros de coche y encuentra la cobertura que mejor se adapta a ti. Asesoramiento personalizado y sin compromiso.",
   },
   {
     path: "/seguro-hogar",
@@ -144,9 +144,9 @@ const ROUTES = [
   },
   {
     path: "/blog/seguros-para-autonomos",
-    title: "Seguros para Autónomos 2026 | RC, Salud y Accidentes | Me Gusta Mi Seguro",
+    title: "Seguros para autónomos: trabajar con más tranquilidad | Me Gusta Mi Seguro",
     description:
-      "Seguros pensados para autónomos: responsabilidad civil, accidentes, comercio y salud. Compara opciones y protege tu actividad, sin compromiso.",
+      "Responsabilidad civil, accidentes, comercio, salud y protección profesional para autónomos.",
   },
   {
     path: "/blog/seguro-transporte-mercancia-todo-lo-que-necesitas-saber",
@@ -215,22 +215,16 @@ const ROUTES = [
       "Qué es el periodo de carencia de un seguro de salud, cuánto dura según el tipo de cobertura y cómo puedes reducirlo o eliminarlo.",
   },
   {
-    path: "/blog/seguro-responsabilidad-civil-autonomos",
-    title: "Seguro de responsabilidad civil para autónomos: qué cubre | Me Gusta Mi Seguro",
+    path: "/blog/puede-desgravar-autonomo-seguro-de-salud",
+    title: "¿Puede desgravar un autónomo el seguro de salud? | Me Gusta Mi Seguro",
     description:
-      "Qué es la responsabilidad civil profesional, quién la necesita, qué cubre exactamente y cómo se diferencia de otras coberturas para autónomos.",
+      "Sí, un autónomo puede deducirse el seguro de salud en la Renta. Te explicamos los requisitos, el límite de 500€ por persona y cómo aplicarlo.",
   },
   {
-    path: "/blog/continente-y-contenido-diferencias-con-ejemplos",
-    title: "Continente y contenido en el seguro de hogar: diferencias con ejemplos | Me Gusta Mi Seguro",
+    path: "/blog/seguro-de-vida-banco-o-independiente",
+    title: "Seguro de vida: ¿el del banco o uno independiente? | Me Gusta Mi Seguro",
     description:
-      "Qué es el continente y qué es el contenido en un seguro de hogar, con ejemplos claros, y por qué confundirlos puede dejarte mal asegurado.",
-  },
-  {
-    path: "/blog/que-seguros-necesita-un-bar-o-restaurante",
-    title: "Qué seguros necesita un bar o restaurante | Me Gusta Mi Seguro",
-    description:
-      "Responsabilidad civil, seguro de local, pérdida de beneficios y accidentes: las coberturas que necesita un bar o restaurante para operar tranquilo.",
+      "¿Te obligan a contratar el seguro de vida del banco con tu hipoteca? Tienes derecho a elegir. Te contamos las diferencias de precio y cobertura.",
   },
 ];
 

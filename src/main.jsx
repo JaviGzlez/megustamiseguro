@@ -33,9 +33,8 @@ import ArticuloCancelarSeguroAntesRenovacion from "./pages/ArticuloCancelarSegur
 import ArticuloDevolverReciboSeguro from "./pages/ArticuloDevolverReciboSeguro";
 import ArticuloCarenciasSeguroMedico from "./pages/ArticuloCarenciasSeguroMedico";
 import ArticuloSeguroSubidaPrecioSinPartes from "./pages/ArticuloSeguroSubidaPrecioSinPartes";
-import ArticuloRCAutonomos from "./pages/ArticuloRCAutonomos";
-import ArticuloContinenteContenido from "./pages/ArticuloContinenteContenido";
-import ArticuloSegurosBarRestaurante from "./pages/ArticuloSegurosBarRestaurante";
+import ArticuloDesgravarSeguroSaludAutonomo from "./pages/ArticuloDesgravarSeguroSaludAutonomo";
+import ArticuloSeguroVidaBancoOIndependiente from "./pages/ArticuloSeguroVidaBancoOIndependiente";
 import AvisoLegal from "./pages/AvisoLegal";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 import PoliticaCookies from "./pages/PoliticaCookies";
@@ -146,16 +145,12 @@ ReactDOM.createRoot(document.getElementById("root")).render(
            element={<ArticuloSeguroSubidaPrecioSinPartes />}
         />
         <Route
-           path="/blog/seguro-responsabilidad-civil-autonomos"
-           element={<ArticuloRCAutonomos />}
+           path="/blog/puede-desgravar-autonomo-seguro-de-salud"
+           element={<ArticuloDesgravarSeguroSaludAutonomo />}
         />
         <Route
-           path="/blog/continente-y-contenido-diferencias-con-ejemplos"
-           element={<ArticuloContinenteContenido />}
-        />
-        <Route
-           path="/blog/que-seguros-necesita-un-bar-o-restaurante"
-           element={<ArticuloSegurosBarRestaurante />}
+           path="/blog/seguro-de-vida-banco-o-independiente"
+           element={<ArticuloSeguroVidaBancoOIndependiente />}
         />
 
         <Route path="/aviso-legal" element={<AvisoLegal />} />

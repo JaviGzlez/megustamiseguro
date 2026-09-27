@@ -94,24 +94,19 @@ function Blog() {
       url: "/blog/carencias-seguro-medico-que-son-cuanto-duran",
     },
     {
-      title: "Seguro de responsabilidad civil para autónomos",
-      text: "Quién la necesita, qué cubre y cómo se diferencia de otras coberturas.",
-      url: "/blog/seguro-responsabilidad-civil-autonomos",
-    },
-    {
-      title: "Continente y contenido: diferencias con ejemplos",
-      text: "Dos términos que se confunden fácilmente, con ejemplos claros.",
-      url: "/blog/continente-y-contenido-diferencias-con-ejemplos",
-    },
-    {
-      title: "Qué seguros necesita un bar o restaurante",
-      text: "Las coberturas clave para operar un negocio de hostelería.",
-      url: "/blog/que-seguros-necesita-un-bar-o-restaurante",
-    },
-    {
       title: "¿Por qué ha subido mi seguro si no he dado partes?",
       text: "Motivos habituales de subida de precio y qué puedes hacer.",
       url: "/blog/por-que-ha-subido-mi-seguro-sin-dar-partes",
+    },
+    {
+      title: "¿Puede desgravar un autónomo el seguro de salud?",
+      text: "Requisitos, límites de 500€ por persona y cómo aplicarlo bien.",
+      url: "/blog/puede-desgravar-autonomo-seguro-de-salud",
+    },
+    {
+      title: "Seguro de vida: ¿el del banco o uno independiente?",
+      text: "Tienes derecho a elegir aseguradora en tu hipoteca. Te contamos las diferencias.",
+      url: "/blog/seguro-de-vida-banco-o-independiente",
     },
   ];
 
