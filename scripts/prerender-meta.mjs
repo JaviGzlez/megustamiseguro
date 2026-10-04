@@ -180,9 +180,9 @@ const ROUTES = [
   },
   {
     path: "/blog/cuanta-antelacion-cambiar-de-seguro",
-    title: "¿Con cuánta antelación puedo cambiar de seguro? Plazos y pasos | Me Gusta Mi Seguro",
+    title: "¿Cuánta Antelación para Cambiar de Seguro? Plazo Exacto 2026 | Me Gusta Mi Seguro",
     description:
-      "El plazo legal para oponerte a la renovación de tu seguro, cómo comunicarlo correctamente y los pasos para cambiar de compañía sin quedarte sin cobertura.",
+      "Te lo decimos en una frase: tienes 1 mes antes de la renovación. Aquí te explicamos cómo avisar correctamente y qué pasa si se te pasa el plazo.",
   },
   {
     path: "/blog/seguro-hogar-cubre-fuga-de-agua",

@@ -6,24 +6,24 @@ function ArticuloCambiarDeSeguroPlazos() {
   return (
     <main className="blogPage">
       <Helmet>
-        <title>¿Con cuánta antelación puedo cambiar de seguro? Plazos y pasos | Me Gusta Mi Seguro</title>
+        <title>¿Cuánta Antelación para Cambiar de Seguro? Plazo Exacto 2026 | Me Gusta Mi Seguro</title>
         <meta
           name="description"
-          content="El plazo legal para oponerte a la renovación de tu seguro, cómo comunicarlo correctamente y los pasos para cambiar de compañía sin quedarte sin cobertura."
+          content="Te lo decimos en una frase: tienes 1 mes antes de la renovación. Aquí te explicamos cómo avisar correctamente y qué pasa si se te pasa el plazo."
         />
               <link rel="canonical" href="https://megustamiseguro.es/blog/cuanta-antelacion-cambiar-de-seguro" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="¿Con cuánta antelación puedo cambiar de seguro? Plazos y pasos | Me Gusta Mi Seguro" />
-        <meta property="og:description" content="El plazo legal para oponerte a la renovación de tu seguro, cómo comunicarlo correctamente y los pasos para cambiar de compañía sin quedarte sin cobertura." />
+        <meta property="og:title" content="¿Cuánta Antelación para Cambiar de Seguro? Plazo Exacto 2026 | Me Gusta Mi Seguro" />
+        <meta property="og:description" content="Te lo decimos en una frase: tienes 1 mes antes de la renovación. Aquí te explicamos cómo avisar correctamente y qué pasa si se te pasa el plazo." />
         <meta property="og:url" content="https://megustamiseguro.es/blog/cuanta-antelacion-cambiar-de-seguro" />
         <meta property="og:image" content="https://megustamiseguro.es/og-image.jpg" />
         <meta property="og:locale" content="es_ES" />
         <meta property="og:site_name" content="Me Gusta Mi Seguro" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="¿Con cuánta antelación puedo cambiar de seguro? Plazos y pasos | Me Gusta Mi Seguro" />
-        <meta name="twitter:description" content="El plazo legal para oponerte a la renovación de tu seguro, cómo comunicarlo correctamente y los pasos para cambiar de compañía sin quedarte sin cobertura." />
+        <meta name="twitter:title" content="¿Cuánta Antelación para Cambiar de Seguro? Plazo Exacto 2026 | Me Gusta Mi Seguro" />
+        <meta name="twitter:description" content="Te lo decimos en una frase: tienes 1 mes antes de la renovación. Aquí te explicamos cómo avisar correctamente y qué pasa si se te pasa el plazo." />
         <meta name="twitter:image" content="https://megustamiseguro.es/og-image.jpg" />
       </Helmet>
 

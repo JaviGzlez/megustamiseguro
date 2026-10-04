@@ -9,6 +9,11 @@
       "source": "/blog/cuna-antelacion-cambiar-de-seguro",
       "destination": "/blog/cuanta-antelacion-cambiar-de-seguro",
       "permanent": true
+    },
+    {
+      "source": "/blog/cuanta-cambiar-de-seguro",
+      "destination": "/blog/cuanta-antelacion-cambiar-de-seguro",
+      "permanent": true
     }
   ],
   "rewrites": [
